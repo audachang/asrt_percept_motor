@@ -1,99 +1,14 @@
-現在因為方向控制系統故障，
-太空船產生逆時鐘90度的方向偏誤，
-您必須選擇顯示箭號順時鐘旋轉90度後之按鍵：
+#ASRT in programmed in Psychopy builder
 
-看到↑，請按→
-看到→，請按↓
-看到↓，請按←
-看到←，請按↑
+ASRT (alternate serial reaction time) task adapted from the following studies:
 
-準備好請按任意鍵繼續…
+- Janacsek, K., & Sa, T. (2009). Perceptual and motor factors of implicit skill learning. 1654–1658. https://doi.org/10.1097/WNR.0b013e328333ba08
 
+- Tóth, B., Janacsek, K., Takács, Á., Kóbor, A., Zavecz, Z., & Nemeth, D. (2017). Dynamics of EEG functional connectivity during statistical learning. Neurobiology of Learning and Memory, 144, 216–229. https://doi.org/10.1016/j.nlm.2017.07.015
 
-answer_directions = np.array(['4', '3', '2', '1'])
+- Kóbor, A., Takács, Á., Kardos, Z., Janacsek, K., Horváth, K., Csépe, V., & Nemeth, D. (2018). ERPs differentiate the sensitivity to statistical probabilities and the learning of sequential structures during procedural learning. Biological Psychology, 135(October 2017), 180–193. https://doi.org/10.1016/j.biopsycho.2018.04.001
 
-mapping on to the response key direction
-['up', 'right', 'down', 'left'],
-
-index of the answers
-0, 1, 2, 3
-
-stimulus direction index: 0, 1, 2, 3
-stimulus direction: up, right, down, left
-stimulus orientation degree: 0, 90, 180, 270
-
-
-sequences are coded as the index of the answers
-
-example 1:
-
-sti sequence (based on answer key orientation): 1, 2, 0, 3 --> 
-answer keys (original mapping): 3, 2, 4, 1 --> 
-orientation: right, down, up, left
-stimulus index: 1, 2, 0, 3 (referring to the answer_directions index)
-stimulus orientation: 90, 180, 0, 270 (referring to the key response indicated by answer_directions index)
-
-learning phase --> 
-sequence: 1, 2, 0, 3 --> 
-answer keys (90 clockwise): 2, 1, 3, 4 --> 
-answer orientation: down, left, right, up
-stimulus index: 1, 2, 0, 3
-stimulus orientation: 90, 180, 0, 270
-
-
-
-testing phase --> 
-motor test sequence (90 clockwise): 2, 3, 1, 0  --> 
-answer keys: 2, 1, 3, 4
-direction: down, left, right, up
-stimulus index: 2, 3, 1, 0
-stimulus orientation: 180, 270, 90, 0
-
-
-perceptual test sequence (original sequence): 1, 2, 0, 3 -->
-answer keys (original mapping): 3, 2, 4, 1
-direction: right, down, up, left
-stimulus index: 1, 2, 0, 3
-stimulus orientation: 90, 180, 0, 270
-
-
-
-
-example 2:
-
-sequence: 3, 0, 2, 1 --> 
-answer keys (original mapping): 1, 4, 2, 3 --> 
-key direction: left, up, down, right
-stimulus index: 3, 0, 2, 1
-stimulus orientation: 90, 180, 0, 270
-
-
-learning phase --> 
-sti sequence: 3, 0, 2, 1 -->
-answer keys (90 clockwise): 4, 3, 1, 2 --> 
-answer index: 0, 1, 3, 2 --> 
-direction: up, right, left, down
-stimulus index: 3, 0, 2, 1
-stimulus orientation: 270, 0, 180, 90
-
-
-
-testing phase --> 
-motor test sti sequence (90 clockwise): 0, 1, 3, 2  --> 
-answer index: 0, 1, 3, 2 --> 
-answer keys: 4, 3, 1, 2 -->
-direction: up, right, left, down
-stimulus index: 0, 1, 3, 2
-stimulus orientation: 90, 180, 0, 270
-
-
-perceptual test sti sequence (original sequence): 3, 0, 2, 1 -->
-answer index: 3, 0, 2, 1 --> 
-answer keys (original mapping): 1, 4, 2, 3
-direction: left, up, down, right
-stimulus index: 3, 0, 2, 1
-stimulus orientation: 270, 0, 180, 90
-
+- Kobor, A., Janacsek, K., Takacs, A., & Nemeth, D. (2017). Statistical learning leads to persistent memory: Evidence for one-year consolidation. Scientific Reports, 7(1), 1–10. https://doi.org/10.1038/s41598-017-00807-3
 
 
 

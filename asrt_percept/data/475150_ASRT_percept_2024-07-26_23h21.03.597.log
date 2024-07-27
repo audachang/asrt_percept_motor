@@ -1,0 +1,707 @@
+169.3405 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [2560, 1600]. Using actual size
+171.0392 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002333D54AF70>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002333D54AF10>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002333D54AD30>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002333D9F9070>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([2560, 1600]), stencilBits=0, stereo=False, title='PsychoPy', units='deg', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+171.0394 	EXP 	window1: mouseVisible = True
+171.0394 	EXP 	window1: backgroundImage = ''
+171.0394 	EXP 	window1: backgroundFit = 'none'
+171.0418 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+171.0419 	EXP 	window1: recordFrameIntervals = False
+171.2050 	EXP 	window1: recordFrameIntervals = True
+171.3888 	EXP 	Screen (0) actual frame rate measured at 60.07Hz
+171.3889 	EXP 	window1: recordFrameIntervals = False
+171.3890 	EXP 	window1: mouseVisible = False
+172.9955 	EXP 	ASRT_percept: status = STARTED
+172.9958 	EXP 	window1: mouseVisible = True
+173.1245 	EXP 	Created spaceship = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='images/spaceship.jpg', interpolate=True, mask=None, maskParams=None, name='spaceship', opacity=0.3, ori=0.0, pos=array([0., 0.]), size=array([128.,  64.]), texRes=128.0, units='deg', win=Window(...))
+173.1248 	EXP 	window1: mouseVisible = True
+173.2198 	EXP 	Created welcometext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='welcometext', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='deg', win=Window(...), wrapWidth=30.0)
+176.5774 	EXP 	window1: mouseVisible = True
+176.5792 	EXP 	Created arrowhead = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0, 0, 0]), lineWidth=1.0, name='arrowhead', opacity=0.25, ori=1.0, pos=array([0., 0.]), size=array([3., 3.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+176.5794 	EXP 	window1: mouseVisible = True
+176.5810 	EXP 	Created cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 2.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+176.5811 	EXP 	window1: mouseVisible = True
+176.5825 	EXP 	Created feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='DFSB-Kai', fontFiles=[], height=3.0, italic=False, languageStyle='LTR', name='feedback_text', opacity=1.0, ori=0.0, pos=array([ 0., -8.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+176.5826 	EXP 	window1: mouseVisible = True
+176.5845 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+176.5846 	EXP 	window1: mouseVisible = True
+176.5855 	EXP 	Created feedback_post_section = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='feedback_post_section', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+176.5855 	EXP 	window1: mouseVisible = True
+176.6778 	EXP 	Created spaceship_rotated = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=True, image='images/spaceship.jpg', interpolate=True, mask=None, maskParams=None, name='spaceship_rotated', opacity=0.3, ori=-45.0, pos=array([0., 0.]), size=array([128.,  64.]), texRes=128.0, units='deg', win=Window(...))
+176.6779 	EXP 	window1: mouseVisible = True
+176.7051 	EXP 	Created rotation_instruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='rotation_instruction', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='deg', win=Window(...), wrapWidth=30.0)
+176.7052 	EXP 	window1: mouseVisible = True
+176.7068 	EXP 	Created arrowhead = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0, 0, 0]), lineWidth=1.0, name='arrowhead', opacity=0.25, ori=1.0, pos=array([0., 0.]), size=array([3., 3.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+176.7068 	EXP 	window1: mouseVisible = True
+176.7083 	EXP 	Created cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 2.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+176.7084 	EXP 	window1: mouseVisible = True
+176.7092 	EXP 	Created feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='DFSB-Kai', fontFiles=[], height=3.0, italic=False, languageStyle='LTR', name='feedback_text', opacity=1.0, ori=0.0, pos=array([ 0., -8.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+176.7093 	EXP 	window1: mouseVisible = True
+176.7104 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+176.7105 	EXP 	window1: mouseVisible = True
+176.7113 	EXP 	Created feedback_post_section = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='feedback_post_section', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+176.7114 	EXP 	window1: mouseVisible = True
+176.7930 	EXP 	Created spaceship_rotated01 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=True, image='images/spaceship.jpg', interpolate=True, mask=None, maskParams=None, name='spaceship_rotated01', opacity=0.3, ori=-45.0, pos=array([0., 0.]), size=array([128.,  64.]), texRes=128.0, units='deg', win=Window(...))
+176.7931 	EXP 	window1: mouseVisible = True
+176.8227 	EXP 	Created rotation_instruction01 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='rotation_instruction01', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='deg', win=Window(...), wrapWidth=100.0)
+176.8228 	EXP 	window1: mouseVisible = True
+176.8244 	EXP 	Created arrowhead = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0, 0, 0]), lineWidth=1.0, name='arrowhead', opacity=0.25, ori=1.0, pos=array([0., 0.]), size=array([3., 3.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+176.8245 	EXP 	window1: mouseVisible = True
+176.8260 	EXP 	Created cross_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='cross_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 2.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+176.8261 	EXP 	window1: mouseVisible = True
+176.8272 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+176.8274 	EXP 	window1: mouseVisible = True
+176.8418 	EXP 	Created seqreport_instruction_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1.,  1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=3.0, italic=False, languageStyle='LTR', name='seqreport_instruction_text', opacity=1.0, ori=0.0, pos=array([-15.,   6.]), rgb=UNKNOWN, text='請依時間順序按出白色箭頭方向\n請按空白鍵繼續…', units='deg', win=Window(...), wrapWidth=20.0)
+176.8419 	EXP 	window1: mouseVisible = True
+176.8434 	EXP 	Created arrow_report = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='arrow_report', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([3., 3.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+176.8435 	EXP 	window1: mouseVisible = True
+176.8443 	EXP 	Created feedback_post_section = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='feedback_post_section', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+176.8445 	EXP 	window1: mouseVisible = True
+176.9322 	EXP 	Created spaceship4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='images/spaceship.jpg', interpolate=True, mask=None, maskParams=None, name='spaceship4', opacity=0.3, ori=0.0, pos=array([0., 0.]), size=array([128.,  64.]), texRes=128.0, units='deg', win=Window(...))
+176.9323 	EXP 	window1: mouseVisible = True
+176.9438 	EXP 	Created percept_testing_instruction_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='percept_testing_instruction_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='請您繼續依箭頭所指方向按下反應鍵。\n準備好請按任意鍵繼續…', units='deg', win=Window(...), wrapWidth=30.0)
+176.9440 	EXP 	window1: mouseVisible = True
+176.9454 	EXP 	Created arrowhead = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0, 0, 0]), lineWidth=1.0, name='arrowhead', opacity=0.25, ori=1.0, pos=array([0., 0.]), size=array([3., 3.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+176.9456 	EXP 	window1: mouseVisible = True
+176.9470 	EXP 	Created cross_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='cross_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 2.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+176.9471 	EXP 	window1: mouseVisible = True
+176.9482 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+176.9483 	EXP 	window1: mouseVisible = True
+176.9490 	EXP 	Created feedback_post_section = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='feedback_post_section', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+176.9491 	EXP 	window1: mouseVisible = True
+176.9620 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=3.0, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='實驗已完成，謝謝您的參與！\n請等待實驗者的進一步導引。', units='deg', win=Window(...), wrapWidth=30.0)
+0.0010 	DATA 	Keypress: space
+0.0453 	EXP 	spaceship: autoDraw = True
+0.0453 	EXP 	welcometext: autoDraw = True
+1.4083 	EXP 	Imported sequences/init_random_sequence_file_list.xlsx as conditions, 1 conditions, 1 params
+1.4086 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+1.4088 	EXP 	New trial (rep=0, index=0): {'initial_random_seq_files': 'sequences/475150_initial_random.csv'}
+1.4197 	EXP 	Imported sequences/475150_initial_random.csv as conditions, 85 conditions, 5 params
+1.4201 	EXP 	Created sequence: sequential, trialTypes=85, nReps=1, seed=None
+1.4202 	EXP 	New trial (rep=0, index=0): OrderedDict([('orientation_index', 0), ('orientation_degrees', 0), ('correct_answer_index', 0), ('correct_answer_direction', 4), ('arrow_color', 'red')])
+1.4294 	DATA 	Keypress: space
+1.4311 	EXP 	spaceship: autoDraw = False
+1.4311 	EXP 	welcometext: autoDraw = False
+1.4311 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+1.4311 	EXP 	arrowhead: ori = 0.0
+1.4311 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+1.4311 	EXP 	arrowhead: autoDraw = True
+1.6425 	EXP 	arrowhead: autoDraw = False
+2.4259 	EXP 	arrowhead: autoDraw = False
+2.4259 	EXP 	feedback_text: height = 3.0
+2.4259 	EXP 	feedback_text: height = 3.0
+2.4259 	EXP 	feedback_text: height = 3.0
+2.4259 	EXP 	feedback_text: text = '!'
+2.4259 	EXP 	cross: autoDraw = True
+2.4259 	EXP 	feedback_text: autoDraw = True
+2.9259 	EXP 	cross: autoDraw = False
+3.4259 	EXP 	feedback_text: autoDraw = False
+3.4259 	EXP 	cross: autoDraw = False
+3.4259 	EXP 	feedback_text: autoDraw = False
+3.4259 	EXP 	text_2: autoDraw = True
+3.5772 	DATA 	Keypress: 1
+4.1098 	EXP 	New trial (rep=0, index=1): OrderedDict([('orientation_index', 3), ('orientation_degrees', 270), ('correct_answer_index', 3), ('correct_answer_direction', 1), ('arrow_color', 'red')])
+4.1258 	EXP 	text_2: autoDraw = False
+4.1258 	EXP 	text_2: autoDraw = False
+4.1258 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+4.1258 	EXP 	arrowhead: ori = 270.0
+4.1258 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+4.1258 	EXP 	arrowhead: autoDraw = True
+4.3259 	EXP 	arrowhead: autoDraw = False
+5.1258 	EXP 	arrowhead: autoDraw = False
+5.1258 	EXP 	feedback_text: text = '!'
+5.1258 	EXP 	cross: autoDraw = True
+5.1258 	EXP 	feedback_text: autoDraw = True
+5.6258 	EXP 	cross: autoDraw = False
+6.1257 	EXP 	feedback_text: autoDraw = False
+6.1257 	EXP 	cross: autoDraw = False
+6.1257 	EXP 	feedback_text: autoDraw = False
+6.1257 	EXP 	text_2: autoDraw = True
+6.8097 	EXP 	New trial (rep=0, index=2): OrderedDict([('orientation_index', 2), ('orientation_degrees', 180), ('correct_answer_index', 2), ('correct_answer_direction', 2), ('arrow_color', 'red')])
+6.8258 	EXP 	text_2: autoDraw = False
+6.8258 	EXP 	text_2: autoDraw = False
+6.8258 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+6.8258 	EXP 	arrowhead: ori = 180.0
+6.8258 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+6.8258 	EXP 	arrowhead: autoDraw = True
+7.0256 	EXP 	arrowhead: autoDraw = False
+7.3624 	DATA 	Keypress: 2
+7.3841 	EXP 	arrowhead: autoDraw = False
+7.3841 	EXP 	feedback_text: height = 3.0
+7.3841 	EXP 	feedback_text: height = 3.0
+7.3841 	EXP 	feedback_text: height = 3.0
+7.3841 	EXP 	feedback_text: text = ''
+7.3841 	EXP 	cross: autoDraw = True
+7.3841 	EXP 	feedback_text: autoDraw = True
+7.8756 	EXP 	cross: autoDraw = False
+8.3757 	EXP 	feedback_text: autoDraw = False
+8.3757 	EXP 	cross: autoDraw = False
+8.3757 	EXP 	feedback_text: autoDraw = False
+8.3757 	EXP 	text_2: autoDraw = True
+9.0596 	EXP 	New trial (rep=0, index=3): OrderedDict([('orientation_index', 0), ('orientation_degrees', 0), ('correct_answer_index', 0), ('correct_answer_direction', 4), ('arrow_color', 'red')])
+9.0756 	EXP 	text_2: autoDraw = False
+9.0756 	EXP 	text_2: autoDraw = False
+9.0756 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+9.0756 	EXP 	arrowhead: ori = 0.0
+9.0756 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+9.0756 	EXP 	arrowhead: autoDraw = True
+9.2757 	EXP 	arrowhead: autoDraw = False
+9.6809 	DATA 	Keypress: 2
+9.6922 	EXP 	arrowhead: autoDraw = False
+9.6922 	EXP 	feedback_text: height = 3.0
+9.6922 	EXP 	feedback_text: height = 3.0
+9.6922 	EXP 	feedback_text: height = 3.0
+9.6922 	EXP 	feedback_text: text = 'X'
+9.6922 	EXP 	cross: autoDraw = True
+9.6922 	EXP 	feedback_text: autoDraw = True
+10.1922 	EXP 	cross: autoDraw = False
+10.6921 	EXP 	feedback_text: autoDraw = False
+10.6921 	EXP 	cross: autoDraw = False
+10.6921 	EXP 	feedback_text: autoDraw = False
+10.6921 	EXP 	text_2: autoDraw = True
+11.3761 	EXP 	New trial (rep=0, index=4): OrderedDict([('orientation_index', 1), ('orientation_degrees', 90), ('correct_answer_index', 1), ('correct_answer_direction', 3), ('arrow_color', 'red')])
+11.3922 	EXP 	text_2: autoDraw = False
+11.3922 	EXP 	text_2: autoDraw = False
+11.3922 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+11.3922 	EXP 	arrowhead: ori = 90.0
+11.3922 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+11.3922 	EXP 	arrowhead: autoDraw = True
+11.5923 	EXP 	arrowhead: autoDraw = False
+11.8112 	DATA 	Keypress: 1
+11.8254 	EXP 	arrowhead: autoDraw = False
+11.8254 	EXP 	feedback_text: text = 'X'
+11.8254 	EXP 	cross: autoDraw = True
+11.8254 	EXP 	feedback_text: autoDraw = True
+12.3255 	EXP 	cross: autoDraw = False
+12.8254 	EXP 	feedback_text: autoDraw = False
+12.8254 	EXP 	cross: autoDraw = False
+12.8254 	EXP 	feedback_text: autoDraw = False
+12.8254 	EXP 	text_2: autoDraw = True
+13.5093 	EXP 	New trial (rep=0, index=5): OrderedDict([('orientation_index', 0), ('orientation_degrees', 0), ('correct_answer_index', 0), ('correct_answer_direction', 4), ('arrow_color', 'red')])
+13.5253 	EXP 	text_2: autoDraw = False
+13.5253 	EXP 	text_2: autoDraw = False
+13.5253 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+13.5253 	EXP 	arrowhead: ori = 0.0
+13.5253 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+13.5253 	EXP 	arrowhead: autoDraw = True
+13.7254 	EXP 	arrowhead: autoDraw = False
+14.0778 	DATA 	Keypress: 3
+14.0921 	EXP 	arrowhead: autoDraw = False
+14.0921 	EXP 	feedback_text: text = 'X'
+14.0921 	EXP 	cross: autoDraw = True
+14.0921 	EXP 	feedback_text: autoDraw = True
+14.5920 	EXP 	cross: autoDraw = False
+15.0920 	EXP 	feedback_text: autoDraw = False
+15.0920 	EXP 	cross: autoDraw = False
+15.0920 	EXP 	feedback_text: autoDraw = False
+15.0920 	EXP 	text_2: autoDraw = True
+15.7762 	EXP 	New trial (rep=0, index=6): OrderedDict([('orientation_index', 1), ('orientation_degrees', 90), ('correct_answer_index', 1), ('correct_answer_direction', 3), ('arrow_color', 'red')])
+15.7920 	EXP 	text_2: autoDraw = False
+15.7920 	EXP 	text_2: autoDraw = False
+15.7920 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+15.7920 	EXP 	arrowhead: ori = 90.0
+15.7920 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+15.7920 	EXP 	arrowhead: autoDraw = True
+15.9919 	EXP 	arrowhead: autoDraw = False
+16.5780 	DATA 	Keypress: 3
+16.5919 	EXP 	arrowhead: autoDraw = False
+16.5919 	EXP 	feedback_text: height = 3.0
+16.5919 	EXP 	feedback_text: height = 3.0
+16.5919 	EXP 	feedback_text: height = 3.0
+16.5919 	EXP 	feedback_text: text = ''
+16.5919 	EXP 	cross: autoDraw = True
+16.5919 	EXP 	feedback_text: autoDraw = True
+17.0917 	EXP 	cross: autoDraw = False
+17.5919 	EXP 	feedback_text: autoDraw = False
+17.5919 	EXP 	cross: autoDraw = False
+17.5919 	EXP 	feedback_text: autoDraw = False
+17.5919 	EXP 	text_2: autoDraw = True
+18.2759 	EXP 	New trial (rep=0, index=7): OrderedDict([('orientation_index', 1), ('orientation_degrees', 90), ('correct_answer_index', 1), ('correct_answer_direction', 3), ('arrow_color', 'red')])
+18.2917 	EXP 	text_2: autoDraw = False
+18.2917 	EXP 	text_2: autoDraw = False
+18.2917 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+18.2917 	EXP 	arrowhead: ori = 90.0
+18.2917 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+18.2917 	EXP 	arrowhead: autoDraw = True
+18.4918 	EXP 	arrowhead: autoDraw = False
+18.7124 	DATA 	Keypress: 2
+18.7251 	EXP 	arrowhead: autoDraw = False
+18.7251 	EXP 	feedback_text: height = 3.0
+18.7251 	EXP 	feedback_text: height = 3.0
+18.7251 	EXP 	feedback_text: height = 3.0
+18.7251 	EXP 	feedback_text: text = 'X'
+18.7251 	EXP 	cross: autoDraw = True
+18.7251 	EXP 	feedback_text: autoDraw = True
+19.2251 	EXP 	cross: autoDraw = False
+19.7251 	EXP 	feedback_text: autoDraw = False
+19.7251 	EXP 	cross: autoDraw = False
+19.7251 	EXP 	feedback_text: autoDraw = False
+19.7251 	EXP 	text_2: autoDraw = True
+20.4092 	EXP 	New trial (rep=0, index=8): OrderedDict([('orientation_index', 0), ('orientation_degrees', 0), ('correct_answer_index', 0), ('correct_answer_direction', 4), ('arrow_color', 'red')])
+20.4249 	EXP 	text_2: autoDraw = False
+20.4249 	EXP 	text_2: autoDraw = False
+20.4249 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+20.4249 	EXP 	arrowhead: ori = 0.0
+20.4249 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+20.4249 	EXP 	arrowhead: autoDraw = True
+20.6250 	EXP 	arrowhead: autoDraw = False
+21.2778 	DATA 	Keypress: 3
+21.2918 	EXP 	arrowhead: autoDraw = False
+21.2918 	EXP 	feedback_text: text = 'X'
+21.2918 	EXP 	cross: autoDraw = True
+21.2918 	EXP 	feedback_text: autoDraw = True
+21.7915 	EXP 	cross: autoDraw = False
+22.2914 	EXP 	feedback_text: autoDraw = False
+22.2914 	EXP 	cross: autoDraw = False
+22.2914 	EXP 	feedback_text: autoDraw = False
+22.2914 	EXP 	text_2: autoDraw = True
+22.9757 	EXP 	New trial (rep=0, index=9): OrderedDict([('orientation_index', 3), ('orientation_degrees', 270), ('correct_answer_index', 3), ('correct_answer_direction', 1), ('arrow_color', 'red')])
+22.9914 	EXP 	text_2: autoDraw = False
+22.9914 	EXP 	text_2: autoDraw = False
+22.9914 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+22.9914 	EXP 	arrowhead: ori = 270.0
+22.9914 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+22.9914 	EXP 	arrowhead: autoDraw = True
+23.1919 	EXP 	arrowhead: autoDraw = False
+23.7941 	DATA 	Keypress: 1
+23.8082 	EXP 	arrowhead: autoDraw = False
+23.8082 	EXP 	feedback_text: height = 3.0
+23.8082 	EXP 	feedback_text: height = 3.0
+23.8082 	EXP 	feedback_text: height = 3.0
+23.8082 	EXP 	feedback_text: text = ''
+23.8082 	EXP 	cross: autoDraw = True
+23.8082 	EXP 	feedback_text: autoDraw = True
+24.3080 	EXP 	cross: autoDraw = False
+24.8080 	EXP 	feedback_text: autoDraw = False
+24.8080 	EXP 	cross: autoDraw = False
+24.8080 	EXP 	feedback_text: autoDraw = False
+24.8080 	EXP 	text_2: autoDraw = True
+25.4920 	EXP 	New trial (rep=0, index=10): OrderedDict([('orientation_index', 0), ('orientation_degrees', 0), ('correct_answer_index', 0), ('correct_answer_direction', 4), ('arrow_color', 'red')])
+25.5080 	EXP 	text_2: autoDraw = False
+25.5080 	EXP 	text_2: autoDraw = False
+25.5080 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+25.5080 	EXP 	arrowhead: ori = 0.0
+25.5080 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+25.5080 	EXP 	arrowhead: autoDraw = True
+25.7079 	EXP 	arrowhead: autoDraw = False
+25.8434 	DATA 	Keypress: 4
+25.8749 	EXP 	arrowhead: autoDraw = False
+25.8749 	EXP 	feedback_text: text = ''
+25.8749 	EXP 	cross: autoDraw = True
+25.8749 	EXP 	feedback_text: autoDraw = True
+26.3747 	EXP 	cross: autoDraw = False
+26.8749 	EXP 	feedback_text: autoDraw = False
+26.8749 	EXP 	cross: autoDraw = False
+26.8749 	EXP 	feedback_text: autoDraw = False
+26.8749 	EXP 	text_2: autoDraw = True
+27.5585 	EXP 	New trial (rep=0, index=11): OrderedDict([('orientation_index', 0), ('orientation_degrees', 0), ('correct_answer_index', 0), ('correct_answer_direction', 4), ('arrow_color', 'red')])
+27.5746 	EXP 	text_2: autoDraw = False
+27.5746 	EXP 	text_2: autoDraw = False
+27.5746 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+27.5746 	EXP 	arrowhead: ori = 0.0
+27.5746 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+27.5746 	EXP 	arrowhead: autoDraw = True
+27.7746 	EXP 	arrowhead: autoDraw = False
+27.9939 	DATA 	Keypress: 4
+28.0079 	EXP 	arrowhead: autoDraw = False
+28.0079 	EXP 	feedback_text: text = ''
+28.0079 	EXP 	cross: autoDraw = True
+28.0079 	EXP 	feedback_text: autoDraw = True
+28.5079 	EXP 	cross: autoDraw = False
+29.0078 	EXP 	feedback_text: autoDraw = False
+29.0078 	EXP 	cross: autoDraw = False
+29.0078 	EXP 	feedback_text: autoDraw = False
+29.0078 	EXP 	text_2: autoDraw = True
+29.6917 	EXP 	New trial (rep=0, index=12): OrderedDict([('orientation_index', 0), ('orientation_degrees', 0), ('correct_answer_index', 0), ('correct_answer_direction', 4), ('arrow_color', 'red')])
+29.7080 	EXP 	text_2: autoDraw = False
+29.7080 	EXP 	text_2: autoDraw = False
+29.7080 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+29.7080 	EXP 	arrowhead: ori = 0.0
+29.7080 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+29.7080 	EXP 	arrowhead: autoDraw = True
+29.9078 	EXP 	arrowhead: autoDraw = False
+30.1602 	DATA 	Keypress: 4
+30.1746 	EXP 	arrowhead: autoDraw = False
+30.1746 	EXP 	feedback_text: text = ''
+30.1746 	EXP 	cross: autoDraw = True
+30.1746 	EXP 	feedback_text: autoDraw = True
+30.6744 	EXP 	cross: autoDraw = False
+31.1744 	EXP 	feedback_text: autoDraw = False
+31.1744 	EXP 	cross: autoDraw = False
+31.1744 	EXP 	feedback_text: autoDraw = False
+31.1744 	EXP 	text_2: autoDraw = True
+31.8581 	EXP 	New trial (rep=0, index=13): OrderedDict([('orientation_index', 3), ('orientation_degrees', 270), ('correct_answer_index', 3), ('correct_answer_direction', 1), ('arrow_color', 'red')])
+31.8743 	EXP 	text_2: autoDraw = False
+31.8743 	EXP 	text_2: autoDraw = False
+31.8743 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+31.8743 	EXP 	arrowhead: ori = 270.0
+31.8743 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+31.8743 	EXP 	arrowhead: autoDraw = True
+32.0743 	EXP 	arrowhead: autoDraw = False
+32.3285 	DATA 	Keypress: 3
+32.3412 	EXP 	arrowhead: autoDraw = False
+32.3412 	EXP 	feedback_text: height = 3.0
+32.3412 	EXP 	feedback_text: height = 3.0
+32.3412 	EXP 	feedback_text: height = 3.0
+32.3412 	EXP 	feedback_text: text = 'X'
+32.3412 	EXP 	cross: autoDraw = True
+32.3412 	EXP 	feedback_text: autoDraw = True
+32.8411 	EXP 	cross: autoDraw = False
+33.3411 	EXP 	feedback_text: autoDraw = False
+33.3411 	EXP 	cross: autoDraw = False
+33.3411 	EXP 	feedback_text: autoDraw = False
+33.3411 	EXP 	text_2: autoDraw = True
+34.0249 	EXP 	New trial (rep=0, index=14): OrderedDict([('orientation_index', 3), ('orientation_degrees', 270), ('correct_answer_index', 3), ('correct_answer_direction', 1), ('arrow_color', 'red')])
+34.0410 	EXP 	text_2: autoDraw = False
+34.0410 	EXP 	text_2: autoDraw = False
+34.0410 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+34.0410 	EXP 	arrowhead: ori = 270.0
+34.0410 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+34.0410 	EXP 	arrowhead: autoDraw = True
+34.2410 	EXP 	arrowhead: autoDraw = False
+34.3767 	DATA 	Keypress: 2
+34.3910 	EXP 	arrowhead: autoDraw = False
+34.3910 	EXP 	feedback_text: text = 'X'
+34.3910 	EXP 	cross: autoDraw = True
+34.3910 	EXP 	feedback_text: autoDraw = True
+34.8911 	EXP 	cross: autoDraw = False
+35.3909 	EXP 	feedback_text: autoDraw = False
+35.3909 	EXP 	cross: autoDraw = False
+35.3909 	EXP 	feedback_text: autoDraw = False
+35.3909 	EXP 	text_2: autoDraw = True
+36.0751 	EXP 	New trial (rep=0, index=15): OrderedDict([('orientation_index', 1), ('orientation_degrees', 90), ('correct_answer_index', 1), ('correct_answer_direction', 3), ('arrow_color', 'red')])
+36.0908 	EXP 	text_2: autoDraw = False
+36.0908 	EXP 	text_2: autoDraw = False
+36.0908 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+36.0908 	EXP 	arrowhead: ori = 90.0
+36.0908 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+36.0908 	EXP 	arrowhead: autoDraw = True
+36.2910 	EXP 	arrowhead: autoDraw = False
+37.0909 	EXP 	arrowhead: autoDraw = False
+37.0909 	EXP 	feedback_text: height = 3.0
+37.0909 	EXP 	feedback_text: height = 3.0
+37.0909 	EXP 	feedback_text: height = 3.0
+37.0909 	EXP 	feedback_text: text = '!'
+37.0909 	EXP 	cross: autoDraw = True
+37.0909 	EXP 	feedback_text: autoDraw = True
+37.5909 	EXP 	cross: autoDraw = False
+38.0908 	EXP 	feedback_text: autoDraw = False
+38.0908 	EXP 	cross: autoDraw = False
+38.0908 	EXP 	feedback_text: autoDraw = False
+38.0908 	EXP 	text_2: autoDraw = True
+38.7748 	EXP 	New trial (rep=0, index=16): OrderedDict([('orientation_index', 2), ('orientation_degrees', 180), ('correct_answer_index', 2), ('correct_answer_direction', 2), ('arrow_color', 'red')])
+38.7907 	EXP 	text_2: autoDraw = False
+38.7907 	EXP 	text_2: autoDraw = False
+38.7907 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+38.7907 	EXP 	arrowhead: ori = 180.0
+38.7907 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+38.7907 	EXP 	arrowhead: autoDraw = True
+38.9908 	EXP 	arrowhead: autoDraw = False
+39.5092 	DATA 	Keypress: 2
+39.5406 	EXP 	arrowhead: autoDraw = False
+39.5406 	EXP 	feedback_text: height = 3.0
+39.5406 	EXP 	feedback_text: height = 3.0
+39.5406 	EXP 	feedback_text: height = 3.0
+39.5406 	EXP 	feedback_text: text = ''
+39.5406 	EXP 	cross: autoDraw = True
+39.5406 	EXP 	feedback_text: autoDraw = True
+40.0406 	EXP 	cross: autoDraw = False
+40.5408 	EXP 	feedback_text: autoDraw = False
+40.5408 	EXP 	cross: autoDraw = False
+40.5408 	EXP 	feedback_text: autoDraw = False
+40.5408 	EXP 	text_2: autoDraw = True
+41.2247 	EXP 	New trial (rep=0, index=17): OrderedDict([('orientation_index', 0), ('orientation_degrees', 0), ('correct_answer_index', 0), ('correct_answer_direction', 4), ('arrow_color', 'red')])
+41.2407 	EXP 	text_2: autoDraw = False
+41.2407 	EXP 	text_2: autoDraw = False
+41.2407 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+41.2407 	EXP 	arrowhead: ori = 0.0
+41.2407 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+41.2407 	EXP 	arrowhead: autoDraw = True
+41.4406 	EXP 	arrowhead: autoDraw = False
+41.4445 	DATA 	Keypress: 1
+41.4572 	EXP 	arrowhead: autoDraw = False
+41.4572 	EXP 	feedback_text: height = 3.0
+41.4572 	EXP 	feedback_text: height = 3.0
+41.4572 	EXP 	feedback_text: height = 3.0
+41.4572 	EXP 	feedback_text: text = 'X'
+41.4572 	EXP 	cross: autoDraw = True
+41.4572 	EXP 	feedback_text: autoDraw = True
+41.9570 	EXP 	cross: autoDraw = False
+42.4571 	EXP 	feedback_text: autoDraw = False
+42.4571 	EXP 	cross: autoDraw = False
+42.4571 	EXP 	feedback_text: autoDraw = False
+42.4571 	EXP 	text_2: autoDraw = True
+43.1413 	EXP 	New trial (rep=0, index=18): OrderedDict([('orientation_index', 1), ('orientation_degrees', 90), ('correct_answer_index', 1), ('correct_answer_direction', 3), ('arrow_color', 'red')])
+43.1569 	EXP 	text_2: autoDraw = False
+43.1569 	EXP 	text_2: autoDraw = False
+43.1569 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+43.1569 	EXP 	arrowhead: ori = 90.0
+43.1569 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+43.1569 	EXP 	arrowhead: autoDraw = True
+43.3572 	EXP 	arrowhead: autoDraw = False
+43.5601 	DATA 	Keypress: 2
+43.5738 	EXP 	arrowhead: autoDraw = False
+43.5738 	EXP 	feedback_text: text = 'X'
+43.5738 	EXP 	cross: autoDraw = True
+43.5738 	EXP 	feedback_text: autoDraw = True
+44.0738 	EXP 	cross: autoDraw = False
+44.5738 	EXP 	feedback_text: autoDraw = False
+44.5738 	EXP 	cross: autoDraw = False
+44.5738 	EXP 	feedback_text: autoDraw = False
+44.5738 	EXP 	text_2: autoDraw = True
+45.2578 	EXP 	New trial (rep=0, index=19): OrderedDict([('orientation_index', 1), ('orientation_degrees', 90), ('correct_answer_index', 1), ('correct_answer_direction', 3), ('arrow_color', 'red')])
+45.2737 	EXP 	text_2: autoDraw = False
+45.2737 	EXP 	text_2: autoDraw = False
+45.2737 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+45.2737 	EXP 	arrowhead: ori = 90.0
+45.2737 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+45.2737 	EXP 	arrowhead: autoDraw = True
+45.4737 	EXP 	arrowhead: autoDraw = False
+45.6266 	DATA 	Keypress: 3
+45.6404 	EXP 	arrowhead: autoDraw = False
+45.6404 	EXP 	feedback_text: height = 3.0
+45.6404 	EXP 	feedback_text: height = 3.0
+45.6404 	EXP 	feedback_text: height = 3.0
+45.6404 	EXP 	feedback_text: text = ''
+45.6404 	EXP 	cross: autoDraw = True
+45.6404 	EXP 	feedback_text: autoDraw = True
+46.1407 	EXP 	cross: autoDraw = False
+46.6403 	EXP 	feedback_text: autoDraw = False
+46.6403 	EXP 	cross: autoDraw = False
+46.6403 	EXP 	feedback_text: autoDraw = False
+46.6403 	EXP 	text_2: autoDraw = True
+47.3247 	EXP 	New trial (rep=0, index=20): OrderedDict([('orientation_index', 0), ('orientation_degrees', 0), ('correct_answer_index', 0), ('correct_answer_direction', 4), ('arrow_color', 'red')])
+47.3262 	DATA 	Keypress: 2
+47.3403 	EXP 	text_2: autoDraw = False
+47.3403 	EXP 	text_2: autoDraw = False
+47.3403 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+47.3403 	EXP 	arrowhead: ori = 0.0
+47.3403 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+47.3403 	EXP 	arrowhead: autoDraw = True
+47.5403 	EXP 	arrowhead: autoDraw = False
+48.3403 	EXP 	arrowhead: autoDraw = False
+48.3403 	EXP 	feedback_text: height = 3.0
+48.3403 	EXP 	feedback_text: height = 3.0
+48.3403 	EXP 	feedback_text: height = 3.0
+48.3403 	EXP 	feedback_text: text = '!'
+48.3403 	EXP 	cross: autoDraw = True
+48.3403 	EXP 	feedback_text: autoDraw = True
+48.8402 	EXP 	cross: autoDraw = False
+49.3402 	EXP 	feedback_text: autoDraw = False
+49.3402 	EXP 	cross: autoDraw = False
+49.3402 	EXP 	feedback_text: autoDraw = False
+49.3402 	EXP 	text_2: autoDraw = True
+50.0244 	EXP 	New trial (rep=0, index=21): OrderedDict([('orientation_index', 2), ('orientation_degrees', 180), ('correct_answer_index', 2), ('correct_answer_direction', 2), ('arrow_color', 'red')])
+50.0402 	EXP 	text_2: autoDraw = False
+50.0402 	EXP 	text_2: autoDraw = False
+50.0402 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+50.0402 	EXP 	arrowhead: ori = 180.0
+50.0402 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+50.0402 	EXP 	arrowhead: autoDraw = True
+50.2401 	EXP 	arrowhead: autoDraw = False
+50.5939 	DATA 	Keypress: 4
+50.6068 	EXP 	arrowhead: autoDraw = False
+50.6068 	EXP 	feedback_text: height = 3.0
+50.6068 	EXP 	feedback_text: height = 3.0
+50.6068 	EXP 	feedback_text: height = 3.0
+50.6068 	EXP 	feedback_text: text = 'X'
+50.6068 	EXP 	cross: autoDraw = True
+50.6068 	EXP 	feedback_text: autoDraw = True
+51.1067 	EXP 	cross: autoDraw = False
+51.6067 	EXP 	feedback_text: autoDraw = False
+51.6067 	EXP 	cross: autoDraw = False
+51.6067 	EXP 	feedback_text: autoDraw = False
+51.6067 	EXP 	text_2: autoDraw = True
+52.0921 	DATA 	Keypress: 2
+52.2912 	EXP 	New trial (rep=0, index=22): OrderedDict([('orientation_index', 1), ('orientation_degrees', 90), ('correct_answer_index', 1), ('correct_answer_direction', 3), ('arrow_color', 'red')])
+52.3067 	EXP 	text_2: autoDraw = False
+52.3067 	EXP 	text_2: autoDraw = False
+52.3067 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+52.3067 	EXP 	arrowhead: ori = 90.0
+52.3067 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+52.3067 	EXP 	arrowhead: autoDraw = True
+52.5068 	EXP 	arrowhead: autoDraw = False
+52.7430 	DATA 	Keypress: 2
+52.7567 	EXP 	arrowhead: autoDraw = False
+52.7567 	EXP 	feedback_text: text = 'X'
+52.7567 	EXP 	cross: autoDraw = True
+52.7567 	EXP 	feedback_text: autoDraw = True
+53.2566 	EXP 	cross: autoDraw = False
+53.7566 	EXP 	feedback_text: autoDraw = False
+53.7566 	EXP 	cross: autoDraw = False
+53.7566 	EXP 	feedback_text: autoDraw = False
+53.7566 	EXP 	text_2: autoDraw = True
+54.4406 	EXP 	New trial (rep=0, index=23): OrderedDict([('orientation_index', 3), ('orientation_degrees', 270), ('correct_answer_index', 3), ('correct_answer_direction', 1), ('arrow_color', 'red')])
+54.4566 	EXP 	text_2: autoDraw = False
+54.4566 	EXP 	text_2: autoDraw = False
+54.4566 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+54.4566 	EXP 	arrowhead: ori = 270.0
+54.4566 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+54.4566 	EXP 	arrowhead: autoDraw = True
+54.6259 	DATA 	Keypress: 3
+54.6400 	EXP 	arrowhead: autoDraw = False
+54.6400 	EXP 	feedback_text: text = 'X'
+54.6400 	EXP 	cross: autoDraw = True
+54.6400 	EXP 	feedback_text: autoDraw = True
+55.1399 	EXP 	cross: autoDraw = False
+55.6398 	EXP 	feedback_text: autoDraw = False
+55.6398 	EXP 	cross: autoDraw = False
+55.6398 	EXP 	feedback_text: autoDraw = False
+55.6398 	EXP 	text_2: autoDraw = True
+56.3244 	EXP 	New trial (rep=0, index=24): OrderedDict([('orientation_index', 1), ('orientation_degrees', 90), ('correct_answer_index', 1), ('correct_answer_direction', 3), ('arrow_color', 'red')])
+56.3399 	EXP 	text_2: autoDraw = False
+56.3399 	EXP 	text_2: autoDraw = False
+56.3399 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+56.3399 	EXP 	arrowhead: ori = 90.0
+56.3399 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+56.3399 	EXP 	arrowhead: autoDraw = True
+56.5398 	EXP 	arrowhead: autoDraw = False
+57.0437 	DATA 	Keypress: 3
+57.0563 	EXP 	arrowhead: autoDraw = False
+57.0563 	EXP 	feedback_text: height = 3.0
+57.0563 	EXP 	feedback_text: height = 3.0
+57.0563 	EXP 	feedback_text: height = 3.0
+57.0563 	EXP 	feedback_text: text = ''
+57.0563 	EXP 	cross: autoDraw = True
+57.0563 	EXP 	feedback_text: autoDraw = True
+57.5563 	EXP 	cross: autoDraw = False
+58.0563 	EXP 	feedback_text: autoDraw = False
+58.0563 	EXP 	cross: autoDraw = False
+58.0563 	EXP 	feedback_text: autoDraw = False
+58.0563 	EXP 	text_2: autoDraw = True
+58.7408 	EXP 	New trial (rep=0, index=25): OrderedDict([('orientation_index', 1), ('orientation_degrees', 90), ('correct_answer_index', 1), ('correct_answer_direction', 3), ('arrow_color', 'red')])
+58.7563 	EXP 	text_2: autoDraw = False
+58.7563 	EXP 	text_2: autoDraw = False
+58.7563 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+58.7563 	EXP 	arrowhead: ori = 90.0
+58.7563 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+58.7563 	EXP 	arrowhead: autoDraw = True
+58.9563 	EXP 	arrowhead: autoDraw = False
+59.1439 	DATA 	Keypress: 4
+59.1562 	EXP 	arrowhead: autoDraw = False
+59.1562 	EXP 	feedback_text: height = 3.0
+59.1562 	EXP 	feedback_text: height = 3.0
+59.1562 	EXP 	feedback_text: height = 3.0
+59.1562 	EXP 	feedback_text: text = 'X'
+59.1562 	EXP 	cross: autoDraw = True
+59.1562 	EXP 	feedback_text: autoDraw = True
+59.6564 	EXP 	cross: autoDraw = False
+60.1563 	EXP 	feedback_text: autoDraw = False
+60.1563 	EXP 	cross: autoDraw = False
+60.1563 	EXP 	feedback_text: autoDraw = False
+60.1563 	EXP 	text_2: autoDraw = True
+60.8401 	EXP 	New trial (rep=0, index=26): OrderedDict([('orientation_index', 1), ('orientation_degrees', 90), ('correct_answer_index', 1), ('correct_answer_direction', 3), ('arrow_color', 'red')])
+60.8560 	EXP 	text_2: autoDraw = False
+60.8560 	EXP 	text_2: autoDraw = False
+60.8560 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+60.8560 	EXP 	arrowhead: ori = 90.0
+60.8560 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+60.8560 	EXP 	arrowhead: autoDraw = True
+61.0559 	EXP 	arrowhead: autoDraw = False
+61.2573 	DATA 	Keypress: 3
+61.2895 	EXP 	arrowhead: autoDraw = False
+61.2895 	EXP 	feedback_text: height = 3.0
+61.2895 	EXP 	feedback_text: height = 3.0
+61.2895 	EXP 	feedback_text: height = 3.0
+61.2895 	EXP 	feedback_text: text = ''
+61.2895 	EXP 	cross: autoDraw = True
+61.2895 	EXP 	feedback_text: autoDraw = True
+61.7895 	EXP 	cross: autoDraw = False
+62.2895 	EXP 	feedback_text: autoDraw = False
+62.2895 	EXP 	cross: autoDraw = False
+62.2895 	EXP 	feedback_text: autoDraw = False
+62.2895 	EXP 	text_2: autoDraw = True
+62.9737 	EXP 	New trial (rep=0, index=27): OrderedDict([('orientation_index', 2), ('orientation_degrees', 180), ('correct_answer_index', 2), ('correct_answer_direction', 2), ('arrow_color', 'red')])
+62.9898 	EXP 	text_2: autoDraw = False
+62.9898 	EXP 	text_2: autoDraw = False
+62.9898 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+62.9898 	EXP 	arrowhead: ori = 180.0
+62.9898 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+62.9898 	EXP 	arrowhead: autoDraw = True
+63.1896 	EXP 	arrowhead: autoDraw = False
+63.7085 	DATA 	Keypress: 2
+63.7230 	EXP 	arrowhead: autoDraw = False
+63.7230 	EXP 	feedback_text: text = ''
+63.7230 	EXP 	cross: autoDraw = True
+63.7230 	EXP 	feedback_text: autoDraw = True
+64.2228 	EXP 	cross: autoDraw = False
+64.7228 	EXP 	feedback_text: autoDraw = False
+64.7228 	EXP 	cross: autoDraw = False
+64.7228 	EXP 	feedback_text: autoDraw = False
+64.7228 	EXP 	text_2: autoDraw = True
+65.4070 	EXP 	New trial (rep=0, index=28): OrderedDict([('orientation_index', 3), ('orientation_degrees', 270), ('correct_answer_index', 3), ('correct_answer_direction', 1), ('arrow_color', 'red')])
+65.4227 	EXP 	text_2: autoDraw = False
+65.4227 	EXP 	text_2: autoDraw = False
+65.4227 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+65.4227 	EXP 	arrowhead: ori = 270.0
+65.4227 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+65.4227 	EXP 	arrowhead: autoDraw = True
+65.6227 	EXP 	arrowhead: autoDraw = False
+65.9755 	DATA 	Keypress: 1
+65.9895 	EXP 	arrowhead: autoDraw = False
+65.9895 	EXP 	feedback_text: text = ''
+65.9895 	EXP 	cross: autoDraw = True
+65.9895 	EXP 	feedback_text: autoDraw = True
+66.4894 	EXP 	cross: autoDraw = False
+66.9893 	EXP 	feedback_text: autoDraw = False
+66.9893 	EXP 	cross: autoDraw = False
+66.9893 	EXP 	feedback_text: autoDraw = False
+66.9893 	EXP 	text_2: autoDraw = True
+67.6732 	EXP 	New trial (rep=0, index=29): OrderedDict([('orientation_index', 0), ('orientation_degrees', 0), ('correct_answer_index', 0), ('correct_answer_direction', 4), ('arrow_color', 'red')])
+67.6894 	EXP 	text_2: autoDraw = False
+67.6894 	EXP 	text_2: autoDraw = False
+67.6894 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+67.6894 	EXP 	arrowhead: ori = 0.0
+67.6894 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+67.6894 	EXP 	arrowhead: autoDraw = True
+67.8893 	EXP 	arrowhead: autoDraw = False
+68.0082 	DATA 	Keypress: 4
+68.0225 	EXP 	arrowhead: autoDraw = False
+68.0225 	EXP 	feedback_text: text = ''
+68.0225 	EXP 	cross: autoDraw = True
+68.0225 	EXP 	feedback_text: autoDraw = True
+68.5226 	EXP 	cross: autoDraw = False
+69.0227 	EXP 	feedback_text: autoDraw = False
+69.0227 	EXP 	cross: autoDraw = False
+69.0227 	EXP 	feedback_text: autoDraw = False
+69.0227 	EXP 	text_2: autoDraw = True
+69.7066 	EXP 	New trial (rep=0, index=30): OrderedDict([('orientation_index', 3), ('orientation_degrees', 270), ('correct_answer_index', 3), ('correct_answer_direction', 1), ('arrow_color', 'red')])
+69.7227 	EXP 	text_2: autoDraw = False
+69.7227 	EXP 	text_2: autoDraw = False
+69.7227 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+69.7227 	EXP 	arrowhead: ori = 270.0
+69.7227 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+69.7227 	EXP 	arrowhead: autoDraw = True
+69.9225 	EXP 	arrowhead: autoDraw = False
+70.2933 	DATA 	Keypress: 2
+70.3057 	EXP 	arrowhead: autoDraw = False
+70.3057 	EXP 	feedback_text: height = 3.0
+70.3057 	EXP 	feedback_text: height = 3.0
+70.3057 	EXP 	feedback_text: height = 3.0
+70.3057 	EXP 	feedback_text: text = 'X'
+70.3057 	EXP 	cross: autoDraw = True
+70.3057 	EXP 	feedback_text: autoDraw = True
+70.8058 	EXP 	cross: autoDraw = False
+71.3059 	EXP 	feedback_text: autoDraw = False
+71.3059 	EXP 	cross: autoDraw = False
+71.3059 	EXP 	feedback_text: autoDraw = False
+71.3059 	EXP 	text_2: autoDraw = True
+71.9901 	EXP 	New trial (rep=0, index=31): OrderedDict([('orientation_index', 0), ('orientation_degrees', 0), ('correct_answer_index', 0), ('correct_answer_direction', 4), ('arrow_color', 'red')])
+72.0056 	EXP 	text_2: autoDraw = False
+72.0056 	EXP 	text_2: autoDraw = False
+72.0056 	EXP 	arrowhead: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+72.0056 	EXP 	arrowhead: ori = 0.0
+72.0056 	EXP 	arrowhead: borderColor = <psychopy.colors.Color: none, alpha=0.0>
+72.0056 	EXP 	arrowhead: autoDraw = True
+72.2057 	EXP 	arrowhead: autoDraw = False
+73.0058 	EXP 	arrowhead: autoDraw = False
+73.0058 	EXP 	feedback_text: height = 3.0
+73.0058 	EXP 	feedback_text: height = 3.0
+73.0058 	EXP 	feedback_text: height = 3.0
+73.0058 	EXP 	feedback_text: text = '!'
+73.0058 	EXP 	cross: autoDraw = True
+73.0058 	EXP 	feedback_text: autoDraw = True
+73.0908 	DATA 	Keypress: escape
+73.2400 	EXP 	ASRT_percept: status = STOPPED
+73.2558 	EXP 	cross: autoDraw = False
+73.2558 	EXP 	feedback_text: autoDraw = False
+73.2560 	EXP 	ASRT_percept: status = STOPPED
+73.3795 	EXP 	window1: mouseVisible = True

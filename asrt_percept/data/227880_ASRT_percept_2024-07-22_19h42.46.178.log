@@ -1,0 +1,183 @@
+110.1003 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [2560, 1440]. Using actual size
+111.7750 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000012CBB7F2D60>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000012CBB7F2D00>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000012CBB7F2B20>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000012CBBC86E20>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([2560, 1440]), stencilBits=0, stereo=False, title='PsychoPy', units='deg', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+111.7751 	EXP 	window1: mouseVisible = True
+111.7751 	EXP 	window1: backgroundImage = ''
+111.7751 	EXP 	window1: backgroundFit = 'none'
+111.7762 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+111.7762 	EXP 	window1: recordFrameIntervals = False
+111.9416 	EXP 	window1: recordFrameIntervals = True
+112.1252 	EXP 	Screen (0) actual frame rate measured at 59.96Hz
+112.1252 	EXP 	window1: recordFrameIntervals = False
+112.1256 	EXP 	window1: mouseVisible = False
+113.7543 	EXP 	ASRT_percept: status = STARTED
+113.7546 	EXP 	window1: mouseVisible = True
+113.8854 	EXP 	Created spaceship = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='images/spaceship.jpg', interpolate=True, mask=None, maskParams=None, name='spaceship', opacity=0.3, ori=0.0, pos=array([0., 0.]), size=array([128.,  64.]), texRes=128.0, units='deg', win=Window(...))
+113.8857 	EXP 	window1: mouseVisible = True
+114.1932 	EXP 	Created welcometext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='welcometext', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='deg', win=Window(...), wrapWidth=30.0)
+139.2355 	EXP 	window1: mouseVisible = True
+139.2453 	EXP 	Created arrowhead = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0, 0, 0]), lineWidth=1.0, name='arrowhead', opacity=0.25, ori=1.0, pos=array([0., 0.]), size=array([3., 3.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+139.2455 	EXP 	window1: mouseVisible = True
+139.2476 	EXP 	Created cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 2.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+139.2477 	EXP 	window1: mouseVisible = True
+139.5948 	EXP 	Created feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='DFSB-Kai', fontFiles=[], height=3.0, italic=False, languageStyle='LTR', name='feedback_text', opacity=1.0, ori=0.0, pos=array([ 0., -8.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+139.5949 	EXP 	window1: mouseVisible = True
+139.5963 	EXP 	Created feedback_post_section = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='feedback_post_section', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+139.5964 	EXP 	window1: mouseVisible = True
+140.6580 	EXP 	Created spaceship_rotated = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=True, image='images/spaceship.jpg', interpolate=True, mask=None, maskParams=None, name='spaceship_rotated', opacity=0.3, ori=-45.0, pos=array([0., 0.]), size=array([128.,  64.]), texRes=128.0, units='deg', win=Window(...))
+140.6581 	EXP 	window1: mouseVisible = True
+141.5870 	EXP 	Created rotation_instruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='rotation_instruction', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='deg', win=Window(...), wrapWidth=30.0)
+141.5872 	EXP 	window1: mouseVisible = True
+141.5892 	EXP 	Created arrowhead = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0, 0, 0]), lineWidth=1.0, name='arrowhead', opacity=0.25, ori=1.0, pos=array([0., 0.]), size=array([3., 3.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+141.5893 	EXP 	window1: mouseVisible = True
+141.5914 	EXP 	Created cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 2.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+141.5915 	EXP 	window1: mouseVisible = True
+141.5926 	EXP 	Created feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='DFSB-Kai', fontFiles=[], height=3.0, italic=False, languageStyle='LTR', name='feedback_text', opacity=1.0, ori=0.0, pos=array([ 0., -8.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+141.5927 	EXP 	window1: mouseVisible = True
+141.5938 	EXP 	Created feedback_post_section = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='feedback_post_section', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+141.5939 	EXP 	window1: mouseVisible = True
+142.8493 	EXP 	Created spaceship_rotated01 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=True, image='images/spaceship.jpg', interpolate=True, mask=None, maskParams=None, name='spaceship_rotated01', opacity=1.0, ori=-45.0, pos=array([0., 0.]), size=array([128.,  64.]), texRes=128.0, units='deg', win=Window(...))
+142.8494 	EXP 	window1: mouseVisible = True
+143.4515 	EXP 	Created rotation_instruction01 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='rotation_instruction01', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='deg', win=Window(...), wrapWidth=100.0)
+143.4517 	EXP 	window1: mouseVisible = True
+143.4538 	EXP 	Created arrowhead = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0, 0, 0]), lineWidth=1.0, name='arrowhead', opacity=0.25, ori=1.0, pos=array([0., 0.]), size=array([3., 3.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+143.4539 	EXP 	window1: mouseVisible = True
+143.4559 	EXP 	Created cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 2.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+143.4560 	EXP 	window1: mouseVisible = True
+143.4572 	EXP 	Created feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='DFSB-Kai', fontFiles=[], height=3.0, italic=False, languageStyle='LTR', name='feedback_text', opacity=1.0, ori=0.0, pos=array([ 0., -8.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+143.4573 	EXP 	window1: mouseVisible = True
+143.4698 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1.,  1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=3.0, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([-5.,  8.]), rgb=UNKNOWN, text='請依時間順序按出白色箭頭方向', units='deg', win=Window(...), wrapWidth=10.0)
+143.4700 	EXP 	window1: mouseVisible = True
+143.4720 	EXP 	Created arrow_report = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='arrow_report', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([3., 3.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+143.4722 	EXP 	window1: mouseVisible = True
+143.8332 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=3.0, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0.0, pos=array([-5.,  0.]), rgb=UNKNOWN, text='A little break before proceed...', units='deg', win=Window(...), wrapWidth=10.0)
+143.8334 	EXP 	window1: mouseVisible = True
+144.6421 	EXP 	Created spaceship4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='images/spaceship.jpg', interpolate=True, mask=None, maskParams=None, name='spaceship4', opacity=0.3, ori=0.0, pos=array([0., 0.]), size=array([128.,  64.]), texRes=128.0, units='deg', win=Window(...))
+144.6423 	EXP 	window1: mouseVisible = True
+145.0084 	EXP 	Created percept_testing_instruction_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='percept_testing_instruction_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='請您繼續依箭頭所指方向按下反應鍵。\n準備好請按任意鍵繼續…', units='deg', win=Window(...), wrapWidth=30.0)
+145.0085 	EXP 	window1: mouseVisible = True
+145.0107 	EXP 	Created arrowhead = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0, 0, 0]), lineWidth=1.0, name='arrowhead', opacity=0.25, ori=1.0, pos=array([0., 0.]), size=array([3., 3.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+145.0109 	EXP 	window1: mouseVisible = True
+145.0129 	EXP 	Created cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 2.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+145.0130 	EXP 	window1: mouseVisible = True
+145.0141 	EXP 	Created feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='DFSB-Kai', fontFiles=[], height=3.0, italic=False, languageStyle='LTR', name='feedback_text', opacity=1.0, ori=0.0, pos=array([ 0., -8.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+145.0994 	EXP 	window1: mouseVisible = True
+145.4147 	EXP 	Created feedback_post_section = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=2.0, italic=False, languageStyle='LTR', name='feedback_post_section', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='deg', win=Window(...), wrapWidth=15.0)
+145.4149 	EXP 	window1: mouseVisible = True
+145.4361 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='DFKai-SB', fontFiles=[], height=3.0, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='實驗已完成，謝謝您的參與！\n請等待實驗者的進一步導引。', units='deg', win=Window(...), wrapWidth=30.0)
+3.4055 	EXP 	spaceship: autoDraw = True
+3.4055 	EXP 	welcometext: autoDraw = True
+143.8265 	EXP 	Imported sequences/init_random_sequence_file_list.xlsx as conditions, 1 conditions, 1 params
+143.8274 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+143.8457 	EXP 	spaceship: autoDraw = False
+143.8457 	EXP 	welcometext: autoDraw = False
+143.8457 	EXP 	spaceship_rotated: autoDraw = True
+143.8457 	EXP 	rotation_instruction: autoDraw = True
+144.4735 	EXP 	Imported sequences/practice_sequence_file_list.xlsx as conditions, 5 conditions, 1 params
+144.4739 	EXP 	Created sequence: random, trialTypes=5, nReps=0, seed=None
+144.5089 	EXP 	spaceship_rotated: autoDraw = False
+144.5089 	EXP 	rotation_instruction: autoDraw = False
+144.5089 	EXP 	spaceship_rotated01: autoDraw = True
+144.5089 	EXP 	rotation_instruction01: autoDraw = True
+145.4425 	EXP 	Imported sequences/learning_sequence_file_list.xlsx as conditions, 20 conditions, 1 params
+145.4431 	EXP 	Created sequence: sequential, trialTypes=20, nReps=1, seed=None
+145.4432 	EXP 	New trial (rep=0, index=0): {'learning_seq_files': 'sequences/227880_learning_sequence_00.csv'}
+145.4671 	EXP 	Imported sequences/227880_learning_sequence_00.csv as conditions, 85 conditions, 5 params
+145.4676 	EXP 	Created sequence: sequential, trialTypes=85, nReps=0, seed=None
+145.4688 	EXP 	Created sequence: random, trialTypes=1, nReps=12, seed=None
+145.4689 	EXP 	New trial (rep=0, index=0): None
+145.4733 	EXP 	spaceship_rotated01: autoDraw = False
+145.4733 	EXP 	rotation_instruction01: autoDraw = False
+145.4733 	EXP 	text_2: autoDraw = True
+146.4866 	EXP 	text_2: autoDraw = False
+147.7477 	EXP 	text_2: autoDraw = False
+147.7477 	EXP 	arrow_report: ori = 0.0
+147.7477 	EXP 	arrow_report: autoDraw = True
+148.7390 	EXP 	New trial (rep=1, index=0): None
+148.7548 	EXP 	arrow_report: autoDraw = False
+148.7548 	EXP 	arrow_report: autoDraw = False
+148.7548 	EXP 	text_2: autoDraw = True
+149.4608 	EXP 	text_2: autoDraw = False
+149.4608 	EXP 	arrow_report: ori = 180.0
+149.4608 	EXP 	arrow_report: autoDraw = True
+150.4566 	EXP 	New trial (rep=2, index=0): None
+150.4729 	EXP 	arrow_report: autoDraw = False
+150.4729 	EXP 	text_2: autoDraw = True
+151.0567 	EXP 	text_2: autoDraw = False
+151.0567 	EXP 	arrow_report: ori = 270.0
+151.0567 	EXP 	arrow_report: autoDraw = True
+152.0418 	EXP 	New trial (rep=3, index=0): None
+152.0575 	EXP 	arrow_report: autoDraw = False
+152.0575 	EXP 	arrow_report: autoDraw = False
+152.0575 	EXP 	text_2: autoDraw = True
+152.4414 	EXP 	text_2: autoDraw = False
+152.4414 	EXP 	arrow_report: ori = 180.0
+152.4414 	EXP 	arrow_report: autoDraw = True
+153.4266 	EXP 	New trial (rep=4, index=0): None
+153.4421 	EXP 	arrow_report: autoDraw = False
+153.4421 	EXP 	arrow_report: autoDraw = False
+153.4421 	EXP 	text_2: autoDraw = True
+153.8760 	EXP 	text_2: autoDraw = False
+153.8760 	EXP 	arrow_report: ori = 90.0
+153.8760 	EXP 	arrow_report: autoDraw = True
+154.8606 	EXP 	New trial (rep=5, index=0): None
+154.8765 	EXP 	arrow_report: autoDraw = False
+154.8765 	EXP 	arrow_report: autoDraw = False
+154.8765 	EXP 	text_2: autoDraw = True
+155.2272 	EXP 	text_2: autoDraw = False
+155.2272 	EXP 	arrow_report: ori = 0.0
+155.2272 	EXP 	arrow_report: autoDraw = True
+156.2118 	EXP 	New trial (rep=6, index=0): None
+156.2276 	EXP 	arrow_report: autoDraw = False
+156.2276 	EXP 	arrow_report: autoDraw = False
+156.2276 	EXP 	text_2: autoDraw = True
+156.5779 	EXP 	text_2: autoDraw = False
+156.5779 	EXP 	arrow_report: ori = 90.0
+156.5779 	EXP 	arrow_report: autoDraw = True
+157.5630 	EXP 	New trial (rep=7, index=0): None
+157.5789 	EXP 	arrow_report: autoDraw = False
+157.5789 	EXP 	arrow_report: autoDraw = False
+157.5789 	EXP 	text_2: autoDraw = True
+157.8624 	EXP 	text_2: autoDraw = False
+157.8624 	EXP 	arrow_report: ori = 180.0
+157.8624 	EXP 	arrow_report: autoDraw = True
+158.8472 	EXP 	New trial (rep=8, index=0): None
+158.8631 	EXP 	arrow_report: autoDraw = False
+158.8631 	EXP 	arrow_report: autoDraw = False
+158.8631 	EXP 	text_2: autoDraw = True
+159.2671 	EXP 	text_2: autoDraw = False
+159.2671 	EXP 	arrow_report: ori = 270.0
+159.2671 	EXP 	arrow_report: autoDraw = True
+160.2647 	EXP 	New trial (rep=9, index=0): None
+160.2811 	EXP 	arrow_report: autoDraw = False
+160.2811 	EXP 	text_2: autoDraw = True
+160.7144 	EXP 	text_2: autoDraw = False
+160.7144 	EXP 	arrow_report: ori = 0.0
+160.7144 	EXP 	arrow_report: autoDraw = True
+161.6993 	EXP 	New trial (rep=10, index=0): None
+161.7156 	EXP 	arrow_report: autoDraw = False
+161.7156 	EXP 	text_2: autoDraw = True
+162.0211 	EXP 	text_2: autoDraw = False
+162.0211 	EXP 	arrow_report: ori = 90.0
+162.0211 	EXP 	arrow_report: autoDraw = True
+163.0175 	EXP 	New trial (rep=11, index=0): None
+163.0336 	EXP 	arrow_report: autoDraw = False
+163.0336 	EXP 	arrow_report: autoDraw = False
+163.0336 	EXP 	text_2: autoDraw = True
+163.3336 	EXP 	text_2: autoDraw = False
+163.3336 	EXP 	arrow_report: ori = 180.0
+163.3336 	EXP 	arrow_report: autoDraw = True
+164.3347 	EXP 	arrow_report: autoDraw = False
+164.3347 	EXP 	arrow_report: autoDraw = False
+164.3347 	EXP 	text_3: autoDraw = True
+165.3192 	EXP 	New trial (rep=0, index=1): {'learning_seq_files': 'sequences/227880_learning_sequence_01.csv'}
+165.3238 	EXP 	Imported sequences/227880_learning_sequence_01.csv as conditions, 85 conditions, 5 params
+165.3243 	EXP 	Created sequence: sequential, trialTypes=85, nReps=0, seed=None
+165.3246 	EXP 	Created sequence: random, trialTypes=1, nReps=12, seed=None
+165.3248 	EXP 	New trial (rep=0, index=0): None
+165.3353 	EXP 	text_3: autoDraw = False
+165.3353 	EXP 	text_3: autoDraw = False
+165.3353 	EXP 	text_2: autoDraw = True
+166.3367 	EXP 	text_2: autoDraw = False
+168.7388 	EXP 	ASRT_percept: status = STOPPED
+168.7551 	EXP 	ASRT_percept: status = STOPPED
+169.4693 	EXP 	window1: mouseVisible = True

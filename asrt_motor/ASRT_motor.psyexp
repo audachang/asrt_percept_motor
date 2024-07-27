@@ -8,7 +8,7 @@
     <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
     <Param val="" valType="str" updates="None" name="End Message"/>
-    <Param val="{'participant': 'f&quot;{randint(0, 999999):06.0f}&quot;', 'session': '001', 'learning_type': 'motor', 'seqID': '1', 'debug': '1'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="{'participant': 'f&quot;{randint(0, 999999):06.0f}&quot;', 'learning_type': 'motor', 'seqID': '1', 'debug': '0'}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
     <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
@@ -130,7 +130,7 @@
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="0.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="1" valType="code" updates="constant" name="stopVal"/>
         <Param val="first key" valType="str" updates="constant" name="store"/>
         <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
@@ -1364,7 +1364,7 @@
     <Routine name="welcomescreen"/>
     <LoopInitiator loopType="TrialHandler" name="init_random_block">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'initial_random_seq_files': 'sequences/306625_initial_random.csv'}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'initial_random_seq_files': 'sequences/867746_initial_random.csv'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="sequences/init_random_sequence_file_list.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="False" valType="bool"/>
@@ -1394,12 +1394,12 @@
     <Routine name="pratice_instruction"/>
     <LoopInitiator loopType="TrialHandler" name="practice_blocks">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'practice_seq_files': 'sequences/475150_practice_sequence_00.csv'}, {'practice_seq_files': 'sequences/475150_practice_sequence_01.csv'}, {'practice_seq_files': 'sequences/475150_practice_sequence_02.csv'}, {'practice_seq_files': 'sequences/475150_practice_sequence_03.csv'}, {'practice_seq_files': 'sequences/475150_practice_sequence_04.csv'}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'practice_seq_files': 'sequences/867746_practice_sequence_00.csv'}, {'practice_seq_files': 'sequences/867746_practice_sequence_01.csv'}, {'practice_seq_files': 'sequences/867746_practice_sequence_02.csv'}, {'practice_seq_files': 'sequences/867746_practice_sequence_03.csv'}, {'practice_seq_files': 'sequences/867746_practice_sequence_04.csv'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="sequences/practice_sequence_file_list.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="0" valType="num"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
       <Param name="name" updates="None" val="practice_blocks" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -1469,7 +1469,7 @@
     <Routine name="motor_testing_instruction"/>
     <LoopInitiator loopType="TrialHandler" name="motor_testing_trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'motor_testing_seq_files': 'sequences/695234_motortesting_sequence_00.csv'}, {'motor_testing_seq_files': 'sequences/695234_motortesting_sequence_01.csv'}, {'motor_testing_seq_files': 'sequences/695234_motortesting_sequence_02.csv'}, {'motor_testing_seq_files': 'sequences/695234_motortesting_sequence_03.csv'}, {'motor_testing_seq_files': 'sequences/695234_motortesting_sequence_04.csv'}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'motor_testing_seq_files': 'sequences/867746_motortesting_sequence_00.csv'}, {'motor_testing_seq_files': 'sequences/867746_motortesting_sequence_01.csv'}, {'motor_testing_seq_files': 'sequences/867746_motortesting_sequence_02.csv'}, {'motor_testing_seq_files': 'sequences/867746_motortesting_sequence_03.csv'}, {'motor_testing_seq_files': 'sequences/867746_motortesting_sequence_04.csv'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="sequences/motor_testing_sequence_file_list.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>

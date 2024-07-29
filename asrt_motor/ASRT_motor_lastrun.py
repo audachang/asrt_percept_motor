@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on July 27, 2024, at 10:58
+    on July 30, 2024, at 00:44
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -45,7 +45,6 @@ psychopyVersion = '2023.2.3'
 expName = 'ASRT_percept'  # from the Builder filename that created this script
 expInfo = {
     'participant': f"{randint(0, 999999):06.0f}",
-    'session': '001',
     'learning_type': 'motor',
     'seqID': '1',
     'debug': '1',
@@ -165,7 +164,7 @@ def setupWindow(expInfo=None, win=None):
     if win is None:
         # if not given a window to setup, make one
         win = visual.Window(
-            size=[1280, 800], fullscr=True, screen=0,
+            size=[1463, 823], fullscr=True, screen=0,
             winType='pyglet', allowStencil=False,
             monitor='mylaptop57cm', color=[0,0,0], colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
@@ -542,6 +541,12 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     df_percepttesting_files.to_excel(f'sequences/percept_testing_sequence_file_list.xlsx', index=False)
     
     # --- Initialize components for Routine "pre_section" ---
+    fixation_init = visual.ShapeStim(
+        win=win, name='fixation_init', vertices='cross',
+        size=(2, 2),
+        ori=0.0, pos=(0, 0), anchor='center',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+        opacity=None, depth=-1.0, interpolate=True)
     
     # --- Initialize components for Routine "trial" ---
     arrowhead = visual.ShapeStim(
@@ -563,7 +568,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     feedbackstr=""
     feedback_text = visual.TextStim(win=win, name='feedback_text',
         text='',
-        font='DFSB-Kai',
+        font='Open Sans',
         pos=(0, -8), height=3.0, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
@@ -579,10 +584,12 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         depth=0.0);
     
     # --- Initialize components for Routine "post_section" ---
+    # Run 'Begin Experiment' code from performance_post_section
+    import numpy as np
     feedback_post_section = visual.TextStim(win=win, name='feedback_post_section',
         text='',
         font='DFKai-SB',
-        pos=(0, 0), height=2.0, wrapWidth=None, ori=0.0, 
+        pos=(0, 0), height=2.0, wrapWidth=30.0, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
@@ -607,6 +614,12 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     key_resp_2 = keyboard.Keyboard()
     
     # --- Initialize components for Routine "pre_section" ---
+    fixation_init = visual.ShapeStim(
+        win=win, name='fixation_init', vertices='cross',
+        size=(2, 2),
+        ori=0.0, pos=(0, 0), anchor='center',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+        opacity=None, depth=-1.0, interpolate=True)
     
     # --- Initialize components for Routine "trial" ---
     arrowhead = visual.ShapeStim(
@@ -628,7 +641,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     feedbackstr=""
     feedback_text = visual.TextStim(win=win, name='feedback_text',
         text='',
-        font='DFSB-Kai',
+        font='Open Sans',
         pos=(0, -8), height=3.0, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
@@ -644,10 +657,12 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         depth=0.0);
     
     # --- Initialize components for Routine "post_section" ---
+    # Run 'Begin Experiment' code from performance_post_section
+    import numpy as np
     feedback_post_section = visual.TextStim(win=win, name='feedback_post_section',
         text='',
         font='DFKai-SB',
-        pos=(0, 0), height=2.0, wrapWidth=None, ori=0.0, 
+        pos=(0, 0), height=2.0, wrapWidth=30.0, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
@@ -672,6 +687,12 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     key_resp_02 = keyboard.Keyboard()
     
     # --- Initialize components for Routine "pre_section" ---
+    fixation_init = visual.ShapeStim(
+        win=win, name='fixation_init', vertices='cross',
+        size=(2, 2),
+        ori=0.0, pos=(0, 0), anchor='center',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+        opacity=None, depth=-1.0, interpolate=True)
     
     # --- Initialize components for Routine "trial" ---
     arrowhead = visual.ShapeStim(
@@ -693,7 +714,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     feedbackstr=""
     feedback_text = visual.TextStim(win=win, name='feedback_text',
         text='',
-        font='DFSB-Kai',
+        font='Open Sans',
         pos=(0, -8), height=3.0, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
@@ -735,10 +756,12 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         opacity=None, depth=0.0, interpolate=True)
     
     # --- Initialize components for Routine "post_section" ---
+    # Run 'Begin Experiment' code from performance_post_section
+    import numpy as np
     feedback_post_section = visual.TextStim(win=win, name='feedback_post_section',
         text='',
         font='DFKai-SB',
-        pos=(0, 0), height=2.0, wrapWidth=None, ori=0.0, 
+        pos=(0, 0), height=2.0, wrapWidth=30.0, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
@@ -763,6 +786,12 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     key_resp_3 = keyboard.Keyboard()
     
     # --- Initialize components for Routine "pre_section" ---
+    fixation_init = visual.ShapeStim(
+        win=win, name='fixation_init', vertices='cross',
+        size=(2, 2),
+        ori=0.0, pos=(0, 0), anchor='center',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+        opacity=None, depth=-1.0, interpolate=True)
     
     # --- Initialize components for Routine "trial" ---
     arrowhead = visual.ShapeStim(
@@ -791,10 +820,12 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         depth=0.0);
     
     # --- Initialize components for Routine "post_section" ---
+    # Run 'Begin Experiment' code from performance_post_section
+    import numpy as np
     feedback_post_section = visual.TextStim(win=win, name='feedback_post_section',
         text='',
         font='DFKai-SB',
-        pos=(0, 0), height=2.0, wrapWidth=None, ori=0.0, 
+        pos=(0, 0), height=2.0, wrapWidth=30.0, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
@@ -998,8 +1029,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         thisExp.addData('pre_section.started', globalClock.getTime())
         # Run 'Begin Routine' code from performance_pre_section
         bkNum += 1
+        bkRT = []
+        bkCorrectNum = 0
+        bkTrialNum = 0
         # keep track of which components have finished
-        pre_sectionComponents = []
+        pre_sectionComponents = [fixation_init]
         for thisComponent in pre_sectionComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1014,13 +1048,46 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         
         # --- Run Routine "pre_section" ---
         routineForceEnded = not continueRoutine
-        while continueRoutine:
+        while continueRoutine and routineTimer.getTime() < 1.0:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
+            
+            # *fixation_init* updates
+            
+            # if fixation_init is starting this frame...
+            if fixation_init.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                fixation_init.frameNStart = frameN  # exact frame index
+                fixation_init.tStart = t  # local t and not account for scr refresh
+                fixation_init.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(fixation_init, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'fixation_init.started')
+                # update status
+                fixation_init.status = STARTED
+                fixation_init.setAutoDraw(True)
+            
+            # if fixation_init is active this frame...
+            if fixation_init.status == STARTED:
+                # update params
+                pass
+            
+            # if fixation_init is stopping this frame...
+            if fixation_init.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > fixation_init.tStartRefresh + 1.0-frameTolerance:
+                    # keep track of stop time/frame for later
+                    fixation_init.tStop = t  # not accounting for scr refresh
+                    fixation_init.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'fixation_init.stopped')
+                    # update status
+                    fixation_init.status = FINISHED
+                    fixation_init.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1048,13 +1115,16 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
         thisExp.addData('pre_section.stopped', globalClock.getTime())
-        # the Routine "pre_section" was not non-slip safe, so reset the non-slip timer
-        routineTimer.reset()
+        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+        if routineForceEnded:
+            routineTimer.reset()
+        else:
+            routineTimer.addTime(-1.000000)
         
         # set up handler to look after randomisation of conditions etc
         init_random_trials = data.TrialHandler(nReps=1.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
-            trialList=data.importConditions(initial_random_seq_files),
+            trialList=data.importConditions(initial_random_seq_files, selection='0:2'),
             seed=None, name='init_random_trials')
         thisExp.addLoop(init_random_trials)  # add the loop to the experiment
         thisInit_random_trial = init_random_trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1106,7 +1176,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             
             # --- Run Routine "trial" ---
             routineForceEnded = not continueRoutine
-            while continueRoutine and routineTimer.getTime() < 0.5:
+            while continueRoutine and routineTimer.getTime() < 1.0:
                 # get current time
                 t = routineTimer.getTime()
                 tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -1169,7 +1239,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if key_resp is stopping this frame...
                 if key_resp.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > key_resp.tStartRefresh + 0.5-frameTolerance:
+                    if tThisFlipGlobal > key_resp.tStartRefresh + 1-frameTolerance:
                         # keep track of stop time/frame for later
                         key_resp.tStop = t  # not accounting for scr refresh
                         key_resp.frameNStop = frameN  # exact frame index
@@ -1237,7 +1307,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if routineForceEnded:
                 routineTimer.reset()
             else:
-                routineTimer.addTime(-0.500000)
+                routineTimer.addTime(-1.000000)
             
             # --- Prepare to start Routine "fixation_feedback" ---
             continueRoutine = True
@@ -1248,6 +1318,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 #feedbackstr = f"correct: response: {key_resp.keys}  correct key: {correct_answer_direction}"
                 #feedbackstr = "正確"
                 feedbackstr = ""
+                bkRT.append(key_resp.rt)
                 bkCorrectNum += 1
             elif key_resp.keys == None:
                 feedbackstr = '!'
@@ -1259,7 +1330,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 #feedbackstr = f"錯誤"
                 
             
-            bkRT.append(key_resp.rt)
+            
             bkTrialNum+=1
             feedback_text.setText(feedbackstr)
             # keep track of which components have finished
@@ -1483,26 +1554,27 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         thisExp.addData('post_section.started', globalClock.getTime())
-        # skip this Routine if its 'Skip if' condition is True
-        continueRoutine = continueRoutine and not ((bkNum < 5 ) and (bkNum % 5 != 0 ) )
         # Run 'Begin Routine' code from performance_post_section
         if len(bkRT) < 1:
             bkRT.append(0)
         if bkTrialNum < 1:
             bkTrialNum = 1
             
-        bkRTmean = int(np.mean(bkRT)*1000)
-        bkACC = bkCorrectNum / bkTrialNum * 100
-        bkRTmeanstr = f"平均反應時間：{bkRTmean} ms"
-        bkACCstr = f"正確率：{bkACC.round()}%"
+        bkRTmean = np.round(np.mean(bkRT)*1000, 0)
+        bkACC = np.round(bkCorrectNum / bkTrialNum * 100)
+        bkRTmeanstr = f"平均反應時間：{bkRTmean}ms"
+        bkACCstr = f"正確率：{bkACC}%"
         sentence1 = "您在這一個段落的表現："
         sentence2 = "請按任意鍵繼續…"
-        this_feedbacktext = f"""
+        
+        this_feedbacktext = \
+        f"""
         {sentence1}
         {bkRTmeanstr}
         {bkACCstr}
         {sentence2}
         """
+        
         feedback_post_section.setText(this_feedbacktext)
         key_resp_4.keys = []
         key_resp_4.rt = []
@@ -1596,7 +1668,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     key_resp_4.status = FINISHED
                     key_resp_4.status = FINISHED
             if key_resp_4.status == STARTED and not waitOnFlip:
-                theseKeys = key_resp_4.getKeys(keyList=['1','2','3','4','space'], ignoreKeys=["escape"], waitRelease=False)
+                theseKeys = key_resp_4.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
                 _key_resp_4_allKeys.extend(theseKeys)
                 if len(_key_resp_4_allKeys):
                     key_resp_4.keys = _key_resp_4_allKeys[-1].name  # just the last key pressed
@@ -1655,9 +1727,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     _key_resp_2_allKeys = []
     # Run 'Begin Routine' code from pre_prac
     bkNum = 0
-    bkRT = []
-    bkCorrectNum = 0
-    bkTrialNum = 0
+    
     
     # keep track of which components have finished
     pratice_instructionComponents = [spaceship_rotated, rotation_instruction, key_resp_2]
@@ -1789,7 +1859,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
-    practice_blocks = data.TrialHandler(nReps=0.0, method='sequential', 
+    practice_blocks = data.TrialHandler(nReps=1.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=data.importConditions('sequences/practice_sequence_file_list.xlsx'),
         seed=None, name='practice_blocks')
@@ -1823,8 +1893,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         thisExp.addData('pre_section.started', globalClock.getTime())
         # Run 'Begin Routine' code from performance_pre_section
         bkNum += 1
+        bkRT = []
+        bkCorrectNum = 0
+        bkTrialNum = 0
         # keep track of which components have finished
-        pre_sectionComponents = []
+        pre_sectionComponents = [fixation_init]
         for thisComponent in pre_sectionComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1839,13 +1912,46 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         
         # --- Run Routine "pre_section" ---
         routineForceEnded = not continueRoutine
-        while continueRoutine:
+        while continueRoutine and routineTimer.getTime() < 1.0:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
+            
+            # *fixation_init* updates
+            
+            # if fixation_init is starting this frame...
+            if fixation_init.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                fixation_init.frameNStart = frameN  # exact frame index
+                fixation_init.tStart = t  # local t and not account for scr refresh
+                fixation_init.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(fixation_init, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'fixation_init.started')
+                # update status
+                fixation_init.status = STARTED
+                fixation_init.setAutoDraw(True)
+            
+            # if fixation_init is active this frame...
+            if fixation_init.status == STARTED:
+                # update params
+                pass
+            
+            # if fixation_init is stopping this frame...
+            if fixation_init.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > fixation_init.tStartRefresh + 1.0-frameTolerance:
+                    # keep track of stop time/frame for later
+                    fixation_init.tStop = t  # not accounting for scr refresh
+                    fixation_init.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'fixation_init.stopped')
+                    # update status
+                    fixation_init.status = FINISHED
+                    fixation_init.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1873,13 +1979,16 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
         thisExp.addData('pre_section.stopped', globalClock.getTime())
-        # the Routine "pre_section" was not non-slip safe, so reset the non-slip timer
-        routineTimer.reset()
+        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+        if routineForceEnded:
+            routineTimer.reset()
+        else:
+            routineTimer.addTime(-1.000000)
         
         # set up handler to look after randomisation of conditions etc
         practice_trials = data.TrialHandler(nReps=1.0, method='random', 
             extraInfo=expInfo, originPath=-1,
-            trialList=data.importConditions(practice_seq_files),
+            trialList=data.importConditions(practice_seq_files, selection='0:8'),
             seed=None, name='practice_trials')
         thisExp.addLoop(practice_trials)  # add the loop to the experiment
         thisPractice_trial = practice_trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1931,7 +2040,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             
             # --- Run Routine "trial" ---
             routineForceEnded = not continueRoutine
-            while continueRoutine and routineTimer.getTime() < 0.5:
+            while continueRoutine and routineTimer.getTime() < 1.0:
                 # get current time
                 t = routineTimer.getTime()
                 tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -1994,7 +2103,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if key_resp is stopping this frame...
                 if key_resp.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > key_resp.tStartRefresh + 0.5-frameTolerance:
+                    if tThisFlipGlobal > key_resp.tStartRefresh + 1-frameTolerance:
                         # keep track of stop time/frame for later
                         key_resp.tStop = t  # not accounting for scr refresh
                         key_resp.frameNStop = frameN  # exact frame index
@@ -2062,7 +2171,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if routineForceEnded:
                 routineTimer.reset()
             else:
-                routineTimer.addTime(-0.500000)
+                routineTimer.addTime(-1.000000)
             
             # --- Prepare to start Routine "fixation_feedback" ---
             continueRoutine = True
@@ -2073,6 +2182,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 #feedbackstr = f"correct: response: {key_resp.keys}  correct key: {correct_answer_direction}"
                 #feedbackstr = "正確"
                 feedbackstr = ""
+                bkRT.append(key_resp.rt)
                 bkCorrectNum += 1
             elif key_resp.keys == None:
                 feedbackstr = '!'
@@ -2084,7 +2194,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 #feedbackstr = f"錯誤"
                 
             
-            bkRT.append(key_resp.rt)
+            
             bkTrialNum+=1
             feedback_text.setText(feedbackstr)
             # keep track of which components have finished
@@ -2308,26 +2418,27 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         thisExp.addData('post_section.started', globalClock.getTime())
-        # skip this Routine if its 'Skip if' condition is True
-        continueRoutine = continueRoutine and not ((bkNum < 5 ) and (bkNum % 5 != 0 ) )
         # Run 'Begin Routine' code from performance_post_section
         if len(bkRT) < 1:
             bkRT.append(0)
         if bkTrialNum < 1:
             bkTrialNum = 1
             
-        bkRTmean = int(np.mean(bkRT)*1000)
-        bkACC = bkCorrectNum / bkTrialNum * 100
-        bkRTmeanstr = f"平均反應時間：{bkRTmean} ms"
-        bkACCstr = f"正確率：{bkACC.round()}%"
+        bkRTmean = np.round(np.mean(bkRT)*1000, 0)
+        bkACC = np.round(bkCorrectNum / bkTrialNum * 100)
+        bkRTmeanstr = f"平均反應時間：{bkRTmean}ms"
+        bkACCstr = f"正確率：{bkACC}%"
         sentence1 = "您在這一個段落的表現："
         sentence2 = "請按任意鍵繼續…"
-        this_feedbacktext = f"""
+        
+        this_feedbacktext = \
+        f"""
         {sentence1}
         {bkRTmeanstr}
         {bkACCstr}
         {sentence2}
         """
+        
         feedback_post_section.setText(this_feedbacktext)
         key_resp_4.keys = []
         key_resp_4.rt = []
@@ -2421,7 +2532,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     key_resp_4.status = FINISHED
                     key_resp_4.status = FINISHED
             if key_resp_4.status == STARTED and not waitOnFlip:
-                theseKeys = key_resp_4.getKeys(keyList=['1','2','3','4','space'], ignoreKeys=["escape"], waitRelease=False)
+                theseKeys = key_resp_4.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
                 _key_resp_4_allKeys.extend(theseKeys)
                 if len(_key_resp_4_allKeys):
                     key_resp_4.keys = _key_resp_4_allKeys[-1].name  # just the last key pressed
@@ -2473,7 +2584,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if thisSession is not None:
             # if running in a Session with a Liaison client, send data up to now
             thisSession.sendExperimentData()
-    # completed 0.0 repeats of 'practice_blocks'
+    # completed 1.0 repeats of 'practice_blocks'
     
     
     # --- Prepare to start Routine "learning_instruction" ---
@@ -2485,9 +2596,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     _key_resp_02_allKeys = []
     # Run 'Begin Routine' code from pre_learning
     bkNum = 0
-    bkRT = []
-    bkCorrectNum = 0
-    bkTrialNum = 0
     
     # keep track of which components have finished
     learning_instructionComponents = [spaceship_rotated01, rotation_instruction01, key_resp_02]
@@ -2619,7 +2727,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
-    learning_trials = data.TrialHandler(nReps=1.0, method='sequential', 
+    learning_trials = data.TrialHandler(nReps=0.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=data.importConditions('sequences/learning_sequence_file_list.xlsx'),
         seed=None, name='learning_trials')
@@ -2653,8 +2761,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         thisExp.addData('pre_section.started', globalClock.getTime())
         # Run 'Begin Routine' code from performance_pre_section
         bkNum += 1
+        bkRT = []
+        bkCorrectNum = 0
+        bkTrialNum = 0
         # keep track of which components have finished
-        pre_sectionComponents = []
+        pre_sectionComponents = [fixation_init]
         for thisComponent in pre_sectionComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -2669,13 +2780,46 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         
         # --- Run Routine "pre_section" ---
         routineForceEnded = not continueRoutine
-        while continueRoutine:
+        while continueRoutine and routineTimer.getTime() < 1.0:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
+            
+            # *fixation_init* updates
+            
+            # if fixation_init is starting this frame...
+            if fixation_init.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                fixation_init.frameNStart = frameN  # exact frame index
+                fixation_init.tStart = t  # local t and not account for scr refresh
+                fixation_init.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(fixation_init, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'fixation_init.started')
+                # update status
+                fixation_init.status = STARTED
+                fixation_init.setAutoDraw(True)
+            
+            # if fixation_init is active this frame...
+            if fixation_init.status == STARTED:
+                # update params
+                pass
+            
+            # if fixation_init is stopping this frame...
+            if fixation_init.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > fixation_init.tStartRefresh + 1.0-frameTolerance:
+                    # keep track of stop time/frame for later
+                    fixation_init.tStop = t  # not accounting for scr refresh
+                    fixation_init.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'fixation_init.stopped')
+                    # update status
+                    fixation_init.status = FINISHED
+                    fixation_init.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2703,13 +2847,16 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
         thisExp.addData('pre_section.stopped', globalClock.getTime())
-        # the Routine "pre_section" was not non-slip safe, so reset the non-slip timer
-        routineTimer.reset()
+        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+        if routineForceEnded:
+            routineTimer.reset()
+        else:
+            routineTimer.addTime(-1.000000)
         
         # set up handler to look after randomisation of conditions etc
         learning_loop = data.TrialHandler(nReps=1.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
-            trialList=data.importConditions(learning_seq_files),
+            trialList=data.importConditions(learning_seq_files, selection='0:2'),
             seed=None, name='learning_loop')
         thisExp.addLoop(learning_loop)  # add the loop to the experiment
         thisLearning_loop = learning_loop.trialList[0]  # so we can initialise stimuli with some values
@@ -2761,7 +2908,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             
             # --- Run Routine "trial" ---
             routineForceEnded = not continueRoutine
-            while continueRoutine and routineTimer.getTime() < 0.5:
+            while continueRoutine and routineTimer.getTime() < 1.0:
                 # get current time
                 t = routineTimer.getTime()
                 tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -2824,7 +2971,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if key_resp is stopping this frame...
                 if key_resp.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > key_resp.tStartRefresh + 0.5-frameTolerance:
+                    if tThisFlipGlobal > key_resp.tStartRefresh + 1-frameTolerance:
                         # keep track of stop time/frame for later
                         key_resp.tStop = t  # not accounting for scr refresh
                         key_resp.frameNStop = frameN  # exact frame index
@@ -2892,7 +3039,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if routineForceEnded:
                 routineTimer.reset()
             else:
-                routineTimer.addTime(-0.500000)
+                routineTimer.addTime(-1.000000)
             
             # --- Prepare to start Routine "fixation_feedback" ---
             continueRoutine = True
@@ -2903,6 +3050,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 #feedbackstr = f"correct: response: {key_resp.keys}  correct key: {correct_answer_direction}"
                 #feedbackstr = "正確"
                 feedbackstr = ""
+                bkRT.append(key_resp.rt)
                 bkCorrectNum += 1
             elif key_resp.keys == None:
                 feedbackstr = '!'
@@ -2914,7 +3062,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 #feedbackstr = f"錯誤"
                 
             
-            bkRT.append(key_resp.rt)
+            
             bkTrialNum+=1
             feedback_text.setText(feedbackstr)
             # keep track of which components have finished
@@ -3493,26 +3641,27 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         thisExp.addData('post_section.started', globalClock.getTime())
-        # skip this Routine if its 'Skip if' condition is True
-        continueRoutine = continueRoutine and not ((bkNum < 5 ) and (bkNum % 5 != 0 ) )
         # Run 'Begin Routine' code from performance_post_section
         if len(bkRT) < 1:
             bkRT.append(0)
         if bkTrialNum < 1:
             bkTrialNum = 1
             
-        bkRTmean = int(np.mean(bkRT)*1000)
-        bkACC = bkCorrectNum / bkTrialNum * 100
-        bkRTmeanstr = f"平均反應時間：{bkRTmean} ms"
-        bkACCstr = f"正確率：{bkACC.round()}%"
+        bkRTmean = np.round(np.mean(bkRT)*1000, 0)
+        bkACC = np.round(bkCorrectNum / bkTrialNum * 100)
+        bkRTmeanstr = f"平均反應時間：{bkRTmean}ms"
+        bkACCstr = f"正確率：{bkACC}%"
         sentence1 = "您在這一個段落的表現："
         sentence2 = "請按任意鍵繼續…"
-        this_feedbacktext = f"""
+        
+        this_feedbacktext = \
+        f"""
         {sentence1}
         {bkRTmeanstr}
         {bkACCstr}
         {sentence2}
         """
+        
         feedback_post_section.setText(this_feedbacktext)
         key_resp_4.keys = []
         key_resp_4.rt = []
@@ -3606,7 +3755,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     key_resp_4.status = FINISHED
                     key_resp_4.status = FINISHED
             if key_resp_4.status == STARTED and not waitOnFlip:
-                theseKeys = key_resp_4.getKeys(keyList=['1','2','3','4','space'], ignoreKeys=["escape"], waitRelease=False)
+                theseKeys = key_resp_4.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
                 _key_resp_4_allKeys.extend(theseKeys)
                 if len(_key_resp_4_allKeys):
                     key_resp_4.keys = _key_resp_4_allKeys[-1].name  # just the last key pressed
@@ -3653,7 +3802,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             routineTimer.reset()
         else:
             routineTimer.addTime(-4.000000)
-    # completed 1.0 repeats of 'learning_trials'
+    # completed 0.0 repeats of 'learning_trials'
     
     
     # --- Prepare to start Routine "motor_testing_instruction" ---
@@ -3665,9 +3814,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     _key_resp_3_allKeys = []
     # Run 'Begin Routine' code from pre_motor_testing
     bkNum = 0
-    bkRT = []
-    bkCorrectNum = 0
-    bkTrialNum = 0
+    
     
     # keep track of which components have finished
     motor_testing_instructionComponents = [spaceship3, motor_testing_instruction_text, key_resp_3]
@@ -3833,8 +3980,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         thisExp.addData('pre_section.started', globalClock.getTime())
         # Run 'Begin Routine' code from performance_pre_section
         bkNum += 1
+        bkRT = []
+        bkCorrectNum = 0
+        bkTrialNum = 0
         # keep track of which components have finished
-        pre_sectionComponents = []
+        pre_sectionComponents = [fixation_init]
         for thisComponent in pre_sectionComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -3849,13 +3999,46 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         
         # --- Run Routine "pre_section" ---
         routineForceEnded = not continueRoutine
-        while continueRoutine:
+        while continueRoutine and routineTimer.getTime() < 1.0:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
+            
+            # *fixation_init* updates
+            
+            # if fixation_init is starting this frame...
+            if fixation_init.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                fixation_init.frameNStart = frameN  # exact frame index
+                fixation_init.tStart = t  # local t and not account for scr refresh
+                fixation_init.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(fixation_init, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'fixation_init.started')
+                # update status
+                fixation_init.status = STARTED
+                fixation_init.setAutoDraw(True)
+            
+            # if fixation_init is active this frame...
+            if fixation_init.status == STARTED:
+                # update params
+                pass
+            
+            # if fixation_init is stopping this frame...
+            if fixation_init.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > fixation_init.tStartRefresh + 1.0-frameTolerance:
+                    # keep track of stop time/frame for later
+                    fixation_init.tStop = t  # not accounting for scr refresh
+                    fixation_init.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'fixation_init.stopped')
+                    # update status
+                    fixation_init.status = FINISHED
+                    fixation_init.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -3883,13 +4066,16 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
         thisExp.addData('pre_section.stopped', globalClock.getTime())
-        # the Routine "pre_section" was not non-slip safe, so reset the non-slip timer
-        routineTimer.reset()
+        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+        if routineForceEnded:
+            routineTimer.reset()
+        else:
+            routineTimer.addTime(-1.000000)
         
         # set up handler to look after randomisation of conditions etc
         motor_testing_loop = data.TrialHandler(nReps=1.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
-            trialList=data.importConditions(motor_testing_seq_files),
+            trialList=data.importConditions(motor_testing_seq_files, selection='0:8'),
             seed=None, name='motor_testing_loop')
         thisExp.addLoop(motor_testing_loop)  # add the loop to the experiment
         thisMotor_testing_loop = motor_testing_loop.trialList[0]  # so we can initialise stimuli with some values
@@ -3941,7 +4127,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             
             # --- Run Routine "trial" ---
             routineForceEnded = not continueRoutine
-            while continueRoutine and routineTimer.getTime() < 0.5:
+            while continueRoutine and routineTimer.getTime() < 1.0:
                 # get current time
                 t = routineTimer.getTime()
                 tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -4004,7 +4190,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if key_resp is stopping this frame...
                 if key_resp.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > key_resp.tStartRefresh + 0.5-frameTolerance:
+                    if tThisFlipGlobal > key_resp.tStartRefresh + 1-frameTolerance:
                         # keep track of stop time/frame for later
                         key_resp.tStop = t  # not accounting for scr refresh
                         key_resp.frameNStop = frameN  # exact frame index
@@ -4072,7 +4258,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if routineForceEnded:
                 routineTimer.reset()
             else:
-                routineTimer.addTime(-0.500000)
+                routineTimer.addTime(-1.000000)
             
             # --- Prepare to start Routine "fixation" ---
             continueRoutine = True
@@ -4276,26 +4462,27 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         thisExp.addData('post_section.started', globalClock.getTime())
-        # skip this Routine if its 'Skip if' condition is True
-        continueRoutine = continueRoutine and not ((bkNum < 5 ) and (bkNum % 5 != 0 ) )
         # Run 'Begin Routine' code from performance_post_section
         if len(bkRT) < 1:
             bkRT.append(0)
         if bkTrialNum < 1:
             bkTrialNum = 1
             
-        bkRTmean = int(np.mean(bkRT)*1000)
-        bkACC = bkCorrectNum / bkTrialNum * 100
-        bkRTmeanstr = f"平均反應時間：{bkRTmean} ms"
-        bkACCstr = f"正確率：{bkACC.round()}%"
+        bkRTmean = np.round(np.mean(bkRT)*1000, 0)
+        bkACC = np.round(bkCorrectNum / bkTrialNum * 100)
+        bkRTmeanstr = f"平均反應時間：{bkRTmean}ms"
+        bkACCstr = f"正確率：{bkACC}%"
         sentence1 = "您在這一個段落的表現："
         sentence2 = "請按任意鍵繼續…"
-        this_feedbacktext = f"""
+        
+        this_feedbacktext = \
+        f"""
         {sentence1}
         {bkRTmeanstr}
         {bkACCstr}
         {sentence2}
         """
+        
         feedback_post_section.setText(this_feedbacktext)
         key_resp_4.keys = []
         key_resp_4.rt = []
@@ -4389,7 +4576,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     key_resp_4.status = FINISHED
                     key_resp_4.status = FINISHED
             if key_resp_4.status == STARTED and not waitOnFlip:
-                theseKeys = key_resp_4.getKeys(keyList=['1','2','3','4','space'], ignoreKeys=["escape"], waitRelease=False)
+                theseKeys = key_resp_4.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
                 _key_resp_4_allKeys.extend(theseKeys)
                 if len(_key_resp_4_allKeys):
                     key_resp_4.keys = _key_resp_4_allKeys[-1].name  # just the last key pressed

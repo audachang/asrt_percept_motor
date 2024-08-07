@@ -39,13 +39,13 @@ server <- function(input, output) {
   })
   
   output$dataPlot <- renderPlot({
-      #d_summ <- d_summary()
+      d_summ <- d_summary()
       #print(head(d_summary()))
       finfo <- list_file(input$tasktype)
       
       asrt_plot2(input$unitx, 
                  input$tasktype, 
-                 d_summary(), 
+                 d_summ, 
                  finfo, 
                  input$sid)
     })

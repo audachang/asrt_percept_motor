@@ -38,7 +38,7 @@ select_file <- function(sidstr, finfo){
 
 
 add_condition_cols <- function(fpath, tasktype) {
-  d <- import(fpth)
+  d <- import(fpath)
   
   setDT(d)
   
@@ -283,7 +283,7 @@ asrt_plot2 <- function(unitx, tasktype, d_summary, finfo, sidstr) {
                                       shape = "trial_type", 
                                       linetype = "trial_type")) +
     geom_line() + 
-    geom_point() + 
+    geom_point(size=4) + 
     do.call(facet_grid, facet_params) +
     labs(
       title = paste(tasktype, sidstr, sep = "-"),
@@ -294,10 +294,15 @@ asrt_plot2 <- function(unitx, tasktype, d_summary, finfo, sidstr) {
     ) +
     theme_minimal(base_size = base_size) +
     theme(
-      axis.text.x = element_text(angle = 90, hjust = 1)
+ 
+        axis.text.x = element_text(angle = 90, hjust = 1),
+        panel.grid.major = element_blank(),  # Remove major grid lines
+        panel.grid.minor = element_blank(),  # Remove minor grid lines
+        text = element_text(size = base_size + 4)  # Increase font size
+  
     )
   
-  if (seqtype != 'epoch') {
+  if (unitx != 'epoch') {
     fig <- fig + theme(strip.text = element_blank(), strip.background = element_blank())
   }
   
@@ -305,7 +310,7 @@ asrt_plot2 <- function(unitx, tasktype, d_summary, finfo, sidstr) {
   
   figpath <- paste0('figures/', str_replace(fn, '.csv', figpath_suffix))
   print(fig)
-  ggsave(figpath, width = ifelse(seqtype == 'epoch', 20, 40), height = 15, units = "cm")
+  ggsave(figpath, width = ifelse(unitx== 'epoch', 20, 40), height = 15, units = "cm")
   
   return(fig)
 }

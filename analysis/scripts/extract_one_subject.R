@@ -108,7 +108,7 @@ d4 <- d3 %>%
   mutate(participant = 1) %>%
   select(participant, accuracy,rt, 
          block_type, blockID, blockID2, epoch, trial_type, 
-         triplet, correct_answer_index) 
+         triplet, correct_answer_direction) 
 
 # Count the frequency of each unique triplet, grouped by trial_type
 triplet_frequency <- d4 %>%

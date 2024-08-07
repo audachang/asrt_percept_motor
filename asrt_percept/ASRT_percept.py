@@ -113,7 +113,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\mypython\\Experiments\\asrt_percept_motor\\asrt_percept\\ASRT_percept_lastrun.py',
+        originPath='C:\\mypython\\Experiments\\asrt_percept_motor\\asrt_percept\\ASRT_percept.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )

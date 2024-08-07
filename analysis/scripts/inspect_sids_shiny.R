@@ -26,6 +26,7 @@ ui <- fluidPage(
 server <- function(input, output) {
   data_reactive <- reactive({
     req(input$fileInput)  # Require that a file is selected
+    
     d <- import(paste0("../data/",input$tasktype,"/",input$fileInput, sep=""))
     setDT(d)
     
@@ -142,9 +143,31 @@ server <- function(input, output) {
       theme_minimal() +
       theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
-    ggsave(str_replace(input$fileInput, '.csv', '.jpg'), 
+    print(file.path('figures',input$taskType,str_replace(input$fileInput, '.csv', '.jpg')))
+    
+    ggsave(file.path('figures',input$tasktype, str_replace(input$fileInput, '.csv', '.jpg')), 
            width = 20, height = 15, units = "cm")
     
+    fig <- ggplot(d4_summary, 
+           aes(x = seqID, y = rt, 
+               group = interaction(trial_type, frequency_category), 
+               color = trial_type, linetype = frequency_category,
+               shape = frequency_category), 
+    ) +
+      geom_line() +
+      geom_point() +
+      facet_wrap(. ~ block_type, scales = "free_x") +
+      labs(
+        title = input$fileInput,
+        x = "Block ID",
+        y = "Reaction Time (ms)",
+        color = "Trial Type",
+        linetype = "Frequency Category"
+      ) +
+      theme_minimal() +
+      theme(axis.text.x = element_text(angle = 90, hjust = 1))
+    
+    print(fig)
     })
   
   output$dynamicUI <- renderUI({

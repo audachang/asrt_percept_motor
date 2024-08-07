@@ -1,6 +1,8 @@
-#ASRT motor test
+# ASRT motor test
 
-
+## 2024-08-06
+
+1. Fixed the "no-reponse-then-terminate" problem at the testing stage
 
 ## Created on 2024-07-27 by Erik Chang
 

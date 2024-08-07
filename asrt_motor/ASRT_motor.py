@@ -42,10 +42,10 @@ from psychopy.hardware import keyboard
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 # Store info about the experiment session
 psychopyVersion = '2023.2.3'
-expName = 'ASRT_percept'  # from the Builder filename that created this script
+expName = 'ASRT_motor'  # from the Builder filename that created this script
 expInfo = {
     'participant': f"{randint(0, 999999):06.0f}",
-    'learning_type': 'percept',
+    'learning_type': 'motor',
     'seqID': '1',
     'debug': '0',
     'date': data.getDateStr(),  # add a simple timestamp
@@ -113,7 +113,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\mypython\\Experiments\\asrt_percept_motor\\asrt_percept\\ASRT_percept_lastrun.py',
+        originPath='C:\\mypython\\Experiments\\asrt_percept_motor\\asrt_motor\\ASRT_motor.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -767,23 +767,23 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         depth=-1.0);
     key_resp_4 = keyboard.Keyboard()
     
-    # --- Initialize components for Routine "percept_testing_instruction" ---
-    spaceship4 = visual.ImageStim(
+    # --- Initialize components for Routine "motor_testing_instruction" ---
+    spaceship3 = visual.ImageStim(
         win=win,
-        name='spaceship4', 
+        name='spaceship3', 
         image='images/spaceship.jpg', mask=None, anchor='center',
         ori=0.0, pos=(0, 0), size=(128, 64),
         color=[1,1,1], colorSpace='rgb', opacity=0.3,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=0.0)
-    key_resp_5 = keyboard.Keyboard()
-    percept_testing_instruction_text = visual.TextStim(win=win, name='percept_testing_instruction_text',
-        text='請您繼續依箭頭所指方向按下反應鍵。\n此段落作答後不會有回饋。\n\n準備好請按任意鍵繼續…',
+    motor_testing_instruction_text = visual.TextStim(win=win, name='motor_testing_instruction_text',
+        text='現在太空船已維修好正常運作，\n請您依箭頭所指方向按下反應鍵，\n不要再選擇旋轉後的方向。\n\n準備好請按任意鍵繼續…',
         font='DFKai-SB',
         pos=(0, 0), height=2.0, wrapWidth=30.0, ori=0.0, 
         color='cyan', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
-        depth=-2.0);
+        depth=-1.0);
+    key_resp_3 = keyboard.Keyboard()
     
     # --- Initialize components for Routine "pre_section" ---
     fixation_init = visual.ShapeStim(
@@ -1315,6 +1315,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             thisExp.addData('fixation_feedback.started', globalClock.getTime())
             # Run 'Begin Routine' code from feedback_code
             if key_resp.keys == str(correct_answer_direction):
+                #feedbackstr = f"correct: response: {key_resp.keys}  correct key: {correct_answer_direction}"
+                #feedbackstr = "正確"
                 feedbackstr = ""
                 bkRT.append(key_resp.rt)
                 bkCorrectNum += 1
@@ -1323,6 +1325,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                
             else:
                 feedbackstr = 'X'
+                #feedbackstr = f"wrong: response: {key_resp.keys} correct key:{correct_answer_direction}"
+                #feedbackstr = f"{type(key_resp.keys)} {type(correct_answer_direction)}"
+                #feedbackstr = f"錯誤"
                 
             
             
@@ -1554,8 +1559,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             bkRT.append(0)
         if bkTrialNum < 1:
             bkTrialNum = 1
-        
-        print(bkRT)
+            
         bkRTmean = np.round(np.mean(bkRT)*1000, 0)
         bkACC = np.round(bkCorrectNum / bkTrialNum * 100)
         bkRTmeanstr = f"平均反應時間：{bkRTmean}ms"
@@ -2175,6 +2179,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             thisExp.addData('fixation_feedback.started', globalClock.getTime())
             # Run 'Begin Routine' code from feedback_code
             if key_resp.keys == str(correct_answer_direction):
+                #feedbackstr = f"correct: response: {key_resp.keys}  correct key: {correct_answer_direction}"
+                #feedbackstr = "正確"
                 feedbackstr = ""
                 bkRT.append(key_resp.rt)
                 bkCorrectNum += 1
@@ -2183,6 +2189,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                
             else:
                 feedbackstr = 'X'
+                #feedbackstr = f"wrong: response: {key_resp.keys} correct key:{correct_answer_direction}"
+                #feedbackstr = f"{type(key_resp.keys)} {type(correct_answer_direction)}"
+                #feedbackstr = f"錯誤"
                 
             
             
@@ -2414,8 +2423,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             bkRT.append(0)
         if bkTrialNum < 1:
             bkTrialNum = 1
-        
-        print(bkRT)
+            
         bkRTmean = np.round(np.mean(bkRT)*1000, 0)
         bkACC = np.round(bkCorrectNum / bkTrialNum * 100)
         bkRTmeanstr = f"平均反應時間：{bkRTmean}ms"
@@ -3039,6 +3047,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             thisExp.addData('fixation_feedback.started', globalClock.getTime())
             # Run 'Begin Routine' code from feedback_code
             if key_resp.keys == str(correct_answer_direction):
+                #feedbackstr = f"correct: response: {key_resp.keys}  correct key: {correct_answer_direction}"
+                #feedbackstr = "正確"
                 feedbackstr = ""
                 bkRT.append(key_resp.rt)
                 bkCorrectNum += 1
@@ -3047,6 +3057,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                
             else:
                 feedbackstr = 'X'
+                #feedbackstr = f"wrong: response: {key_resp.keys} correct key:{correct_answer_direction}"
+                #feedbackstr = f"{type(key_resp.keys)} {type(correct_answer_direction)}"
+                #feedbackstr = f"錯誤"
                 
             
             
@@ -3320,19 +3333,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # update params
                 pass
             
-            # if seqreport_instruction_text is stopping this frame...
-            if seqreport_instruction_text.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > seqreport_instruction_text.tStartRefresh + 1.0-frameTolerance:
-                    # keep track of stop time/frame for later
-                    seqreport_instruction_text.tStop = t  # not accounting for scr refresh
-                    seqreport_instruction_text.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'seqreport_instruction_text.stopped')
-                    # update status
-                    seqreport_instruction_text.status = FINISHED
-                    seqreport_instruction_text.setAutoDraw(False)
-            
             # *seqreport_instruction_key* updates
             waitOnFlip = False
             
@@ -3476,7 +3476,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     win.callOnFlip(seq_report_key.clock.reset)  # t=0 on next screen flip
                     win.callOnFlip(seq_report_key.clearEvents, eventType='keyboard')  # clear events on next screen flip
                 if seq_report_key.status == STARTED and not waitOnFlip:
-                    theseKeys = seq_report_key.getKeys(keyList=['1','2','3','4'], ignoreKeys=["escape"], waitRelease=False)
+                    theseKeys = seq_report_key.getKeys(keyList=['1','2','3','4','up','down','left','right'], ignoreKeys=["escape"], waitRelease=False)
                     _seq_report_key_allKeys.extend(theseKeys)
                     if len(_seq_report_key_allKeys):
                         seq_report_key.keys = _seq_report_key_allKeys[-1].name  # just the last key pressed
@@ -3633,8 +3633,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             bkRT.append(0)
         if bkTrialNum < 1:
             bkTrialNum = 1
-        
-        print(bkRT)
+            
         bkRTmean = np.round(np.mean(bkRT)*1000, 0)
         bkACC = np.round(bkCorrectNum / bkTrialNum * 100)
         bkRTmeanstr = f"平均反應時間：{bkRTmean}ms"
@@ -3793,22 +3792,20 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # completed 1.0 repeats of 'learning_trials'
     
     
-    # --- Prepare to start Routine "percept_testing_instruction" ---
+    # --- Prepare to start Routine "motor_testing_instruction" ---
     continueRoutine = True
     # update component parameters for each repeat
-    thisExp.addData('percept_testing_instruction.started', globalClock.getTime())
-    key_resp_5.keys = []
-    key_resp_5.rt = []
-    _key_resp_5_allKeys = []
-    # Run 'Begin Routine' code from pre_percept
+    thisExp.addData('motor_testing_instruction.started', globalClock.getTime())
+    key_resp_3.keys = []
+    key_resp_3.rt = []
+    _key_resp_3_allKeys = []
+    # Run 'Begin Routine' code from pre_motor_testing
     bkNum = 0
-    bkRT = []
-    bkCorrectNum = 0
-    bkTrialNum = 0
+    
     
     # keep track of which components have finished
-    percept_testing_instructionComponents = [spaceship4, key_resp_5, percept_testing_instruction_text]
-    for thisComponent in percept_testing_instructionComponents:
+    motor_testing_instructionComponents = [spaceship3, motor_testing_instruction_text, key_resp_3]
+    for thisComponent in motor_testing_instructionComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -3820,7 +3817,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     frameN = -1
     
-    # --- Run Routine "percept_testing_instruction" ---
+    # --- Run Routine "motor_testing_instruction" ---
     routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
@@ -3830,73 +3827,73 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *spaceship4* updates
+        # *spaceship3* updates
         
-        # if spaceship4 is starting this frame...
-        if spaceship4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if spaceship3 is starting this frame...
+        if spaceship3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            spaceship4.frameNStart = frameN  # exact frame index
-            spaceship4.tStart = t  # local t and not account for scr refresh
-            spaceship4.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(spaceship4, 'tStartRefresh')  # time at next scr refresh
+            spaceship3.frameNStart = frameN  # exact frame index
+            spaceship3.tStart = t  # local t and not account for scr refresh
+            spaceship3.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(spaceship3, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'spaceship4.started')
+            thisExp.timestampOnFlip(win, 'spaceship3.started')
             # update status
-            spaceship4.status = STARTED
-            spaceship4.setAutoDraw(True)
+            spaceship3.status = STARTED
+            spaceship3.setAutoDraw(True)
         
-        # if spaceship4 is active this frame...
-        if spaceship4.status == STARTED:
+        # if spaceship3 is active this frame...
+        if spaceship3.status == STARTED:
             # update params
             pass
         
-        # *key_resp_5* updates
+        # *motor_testing_instruction_text* updates
+        
+        # if motor_testing_instruction_text is starting this frame...
+        if motor_testing_instruction_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            motor_testing_instruction_text.frameNStart = frameN  # exact frame index
+            motor_testing_instruction_text.tStart = t  # local t and not account for scr refresh
+            motor_testing_instruction_text.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(motor_testing_instruction_text, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'motor_testing_instruction_text.started')
+            # update status
+            motor_testing_instruction_text.status = STARTED
+            motor_testing_instruction_text.setAutoDraw(True)
+        
+        # if motor_testing_instruction_text is active this frame...
+        if motor_testing_instruction_text.status == STARTED:
+            # update params
+            pass
+        
+        # *key_resp_3* updates
         waitOnFlip = False
         
-        # if key_resp_5 is starting this frame...
-        if key_resp_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if key_resp_3 is starting this frame...
+        if key_resp_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            key_resp_5.frameNStart = frameN  # exact frame index
-            key_resp_5.tStart = t  # local t and not account for scr refresh
-            key_resp_5.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp_5, 'tStartRefresh')  # time at next scr refresh
+            key_resp_3.frameNStart = frameN  # exact frame index
+            key_resp_3.tStart = t  # local t and not account for scr refresh
+            key_resp_3.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp_3, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'key_resp_5.started')
+            thisExp.timestampOnFlip(win, 'key_resp_3.started')
             # update status
-            key_resp_5.status = STARTED
+            key_resp_3.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
-            win.callOnFlip(key_resp_5.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp_5.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp_5.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_5.getKeys(keyList=['1','2','3','4','space'], ignoreKeys=["escape"], waitRelease=False)
-            _key_resp_5_allKeys.extend(theseKeys)
-            if len(_key_resp_5_allKeys):
-                key_resp_5.keys = _key_resp_5_allKeys[-1].name  # just the last key pressed
-                key_resp_5.rt = _key_resp_5_allKeys[-1].rt
-                key_resp_5.duration = _key_resp_5_allKeys[-1].duration
+            win.callOnFlip(key_resp_3.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp_3.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp_3.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp_3.getKeys(keyList=['1','2','3','4','space'], ignoreKeys=["escape"], waitRelease=False)
+            _key_resp_3_allKeys.extend(theseKeys)
+            if len(_key_resp_3_allKeys):
+                key_resp_3.keys = _key_resp_3_allKeys[-1].name  # just the last key pressed
+                key_resp_3.rt = _key_resp_3_allKeys[-1].rt
+                key_resp_3.duration = _key_resp_3_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
-        
-        # *percept_testing_instruction_text* updates
-        
-        # if percept_testing_instruction_text is starting this frame...
-        if percept_testing_instruction_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            percept_testing_instruction_text.frameNStart = frameN  # exact frame index
-            percept_testing_instruction_text.tStart = t  # local t and not account for scr refresh
-            percept_testing_instruction_text.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(percept_testing_instruction_text, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'percept_testing_instruction_text.started')
-            # update status
-            percept_testing_instruction_text.status = STARTED
-            percept_testing_instruction_text.setAutoDraw(True)
-        
-        # if percept_testing_instruction_text is active this frame...
-        if percept_testing_instruction_text.status == STARTED:
-            # update params
-            pass
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -3910,7 +3907,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             routineForceEnded = True
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in percept_testing_instructionComponents:
+        for thisComponent in motor_testing_instructionComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -3919,36 +3916,36 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # --- Ending Routine "percept_testing_instruction" ---
-    for thisComponent in percept_testing_instructionComponents:
+    # --- Ending Routine "motor_testing_instruction" ---
+    for thisComponent in motor_testing_instructionComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    thisExp.addData('percept_testing_instruction.stopped', globalClock.getTime())
+    thisExp.addData('motor_testing_instruction.stopped', globalClock.getTime())
     # check responses
-    if key_resp_5.keys in ['', [], None]:  # No response was made
-        key_resp_5.keys = None
-    thisExp.addData('key_resp_5.keys',key_resp_5.keys)
-    if key_resp_5.keys != None:  # we had a response
-        thisExp.addData('key_resp_5.rt', key_resp_5.rt)
-        thisExp.addData('key_resp_5.duration', key_resp_5.duration)
+    if key_resp_3.keys in ['', [], None]:  # No response was made
+        key_resp_3.keys = None
+    thisExp.addData('key_resp_3.keys',key_resp_3.keys)
+    if key_resp_3.keys != None:  # we had a response
+        thisExp.addData('key_resp_3.rt', key_resp_3.rt)
+        thisExp.addData('key_resp_3.duration', key_resp_3.duration)
     thisExp.nextEntry()
-    # the Routine "percept_testing_instruction" was not non-slip safe, so reset the non-slip timer
+    # the Routine "motor_testing_instruction" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
-    percept_testing_trials = data.TrialHandler(nReps=1.0, method='sequential', 
+    motor_testing_trials = data.TrialHandler(nReps=1.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('sequences/percept_testing_sequence_file_list.xlsx'),
-        seed=None, name='percept_testing_trials')
-    thisExp.addLoop(percept_testing_trials)  # add the loop to the experiment
-    thisPercept_testing_trial = percept_testing_trials.trialList[0]  # so we can initialise stimuli with some values
-    # abbreviate parameter names if possible (e.g. rgb = thisPercept_testing_trial.rgb)
-    if thisPercept_testing_trial != None:
-        for paramName in thisPercept_testing_trial:
-            globals()[paramName] = thisPercept_testing_trial[paramName]
+        trialList=data.importConditions('sequences/motor_testing_sequence_file_list.xlsx'),
+        seed=None, name='motor_testing_trials')
+    thisExp.addLoop(motor_testing_trials)  # add the loop to the experiment
+    thisMotor_testing_trial = motor_testing_trials.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisMotor_testing_trial.rgb)
+    if thisMotor_testing_trial != None:
+        for paramName in thisMotor_testing_trial:
+            globals()[paramName] = thisMotor_testing_trial[paramName]
     
-    for thisPercept_testing_trial in percept_testing_trials:
-        currentLoop = percept_testing_trials
+    for thisMotor_testing_trial in motor_testing_trials:
+        currentLoop = motor_testing_trials
         thisExp.timestampOnFlip(win, 'thisRow.t')
         # pause experiment here if requested
         if thisExp.status == PAUSED:
@@ -3959,10 +3956,10 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 timers=[routineTimer], 
                 playbackComponents=[]
         )
-        # abbreviate parameter names if possible (e.g. rgb = thisPercept_testing_trial.rgb)
-        if thisPercept_testing_trial != None:
-            for paramName in thisPercept_testing_trial:
-                globals()[paramName] = thisPercept_testing_trial[paramName]
+        # abbreviate parameter names if possible (e.g. rgb = thisMotor_testing_trial.rgb)
+        if thisMotor_testing_trial != None:
+            for paramName in thisMotor_testing_trial:
+                globals()[paramName] = thisMotor_testing_trial[paramName]
         
         # --- Prepare to start Routine "pre_section" ---
         continueRoutine = True
@@ -4063,19 +4060,19 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             routineTimer.addTime(-1.000000)
         
         # set up handler to look after randomisation of conditions etc
-        percept_testing_loop = data.TrialHandler(nReps=1.0, method='sequential', 
+        motor_testing_loop = data.TrialHandler(nReps=1.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
-            trialList=data.importConditions(percept_testing_seq_files),
-            seed=None, name='percept_testing_loop')
-        thisExp.addLoop(percept_testing_loop)  # add the loop to the experiment
-        thisPercept_testing_loop = percept_testing_loop.trialList[0]  # so we can initialise stimuli with some values
-        # abbreviate parameter names if possible (e.g. rgb = thisPercept_testing_loop.rgb)
-        if thisPercept_testing_loop != None:
-            for paramName in thisPercept_testing_loop:
-                globals()[paramName] = thisPercept_testing_loop[paramName]
+            trialList=data.importConditions(motor_testing_seq_files),
+            seed=None, name='motor_testing_loop')
+        thisExp.addLoop(motor_testing_loop)  # add the loop to the experiment
+        thisMotor_testing_loop = motor_testing_loop.trialList[0]  # so we can initialise stimuli with some values
+        # abbreviate parameter names if possible (e.g. rgb = thisMotor_testing_loop.rgb)
+        if thisMotor_testing_loop != None:
+            for paramName in thisMotor_testing_loop:
+                globals()[paramName] = thisMotor_testing_loop[paramName]
         
-        for thisPercept_testing_loop in percept_testing_loop:
-            currentLoop = percept_testing_loop
+        for thisMotor_testing_loop in motor_testing_loop:
+            currentLoop = motor_testing_loop
             thisExp.timestampOnFlip(win, 'thisRow.t')
             # pause experiment here if requested
             if thisExp.status == PAUSED:
@@ -4086,10 +4083,10 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     timers=[routineTimer], 
                     playbackComponents=[]
             )
-            # abbreviate parameter names if possible (e.g. rgb = thisPercept_testing_loop.rgb)
-            if thisPercept_testing_loop != None:
-                for paramName in thisPercept_testing_loop:
-                    globals()[paramName] = thisPercept_testing_loop[paramName]
+            # abbreviate parameter names if possible (e.g. rgb = thisMotor_testing_loop.rgb)
+            if thisMotor_testing_loop != None:
+                for paramName in thisMotor_testing_loop:
+                    globals()[paramName] = thisMotor_testing_loop[paramName]
             
             # --- Prepare to start Routine "trial" ---
             continueRoutine = True
@@ -4238,12 +4235,12 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                    key_resp.corr = 1;  # correct non-response
                 else:
                    key_resp.corr = 0;  # failed to respond (incorrectly)
-            # store data for percept_testing_loop (TrialHandler)
-            percept_testing_loop.addData('key_resp.keys',key_resp.keys)
-            percept_testing_loop.addData('key_resp.corr', key_resp.corr)
+            # store data for motor_testing_loop (TrialHandler)
+            motor_testing_loop.addData('key_resp.keys',key_resp.keys)
+            motor_testing_loop.addData('key_resp.corr', key_resp.corr)
             if key_resp.keys != None:  # we had a response
-                percept_testing_loop.addData('key_resp.rt', key_resp.rt)
-                percept_testing_loop.addData('key_resp.duration', key_resp.duration)
+                motor_testing_loop.addData('key_resp.rt', key_resp.rt)
+                motor_testing_loop.addData('key_resp.duration', key_resp.duration)
             # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
             if routineForceEnded:
                 routineTimer.reset()
@@ -4450,7 +4447,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 1.0 repeats of 'percept_testing_loop'
+        # completed 1.0 repeats of 'motor_testing_loop'
         
         
         # --- Prepare to start Routine "post_section" ---
@@ -4462,8 +4459,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             bkRT.append(0)
         if bkTrialNum < 1:
             bkTrialNum = 1
-        
-        print(bkRT)
+            
         bkRTmean = np.round(np.mean(bkRT)*1000, 0)
         bkACC = np.round(bkCorrectNum / bkTrialNum * 100)
         bkRTmeanstr = f"平均反應時間：{bkRTmean}ms"
@@ -4610,10 +4606,10 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         # check responses
         if key_resp_4.keys in ['', [], None]:  # No response was made
             key_resp_4.keys = None
-        percept_testing_trials.addData('key_resp_4.keys',key_resp_4.keys)
+        motor_testing_trials.addData('key_resp_4.keys',key_resp_4.keys)
         if key_resp_4.keys != None:  # we had a response
-            percept_testing_trials.addData('key_resp_4.rt', key_resp_4.rt)
-            percept_testing_trials.addData('key_resp_4.duration', key_resp_4.duration)
+            motor_testing_trials.addData('key_resp_4.rt', key_resp_4.rt)
+            motor_testing_trials.addData('key_resp_4.duration', key_resp_4.duration)
         # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
         if routineForceEnded:
             routineTimer.reset()
@@ -4624,7 +4620,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if thisSession is not None:
             # if running in a Session with a Liaison client, send data up to now
             thisSession.sendExperimentData()
-    # completed 1.0 repeats of 'percept_testing_trials'
+    # completed 1.0 repeats of 'motor_testing_trials'
     
     
     # --- Prepare to start Routine "thankyouscreen" ---

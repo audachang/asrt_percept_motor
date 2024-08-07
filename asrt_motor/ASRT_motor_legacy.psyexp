@@ -749,8 +749,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="if ((key_resp.keys === correct_answer_direction.toString())) {&amp;#10;    feedbackstr = &quot;\u6b63\u78ba&quot;;&amp;#10;    bkCorrectNum += 1;&amp;#10;} else {&amp;#10;    feedbackstr = &quot;\u932f\u8aa4&quot;;&amp;#10;}&amp;#10;bkRT.push(key_resp.rt);&amp;#10;bkTrialNum += 1;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if key_resp.keys == str(correct_answer_direction):&amp;#10;    feedbackstr =&quot;正確&quot;&amp;#10;    bkCorrectNum += 1&amp;#10;else:&amp;#10;    feedbackstr = &quot;錯誤&quot;&amp;#10;    &amp;#10;bkRT.append(key_resp.rt)&amp;#10;bkTrialNum+=1" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="if ((key_resp.keys === correct_answer_direction.toString())) {&amp;#10;    feedbackstr = &quot;&quot;;&amp;#10;    bkRT.push(key_resp.rt);&amp;#10;    bkCorrectNum += 1;&amp;#10;} else {&amp;#10;    if ((key_resp.keys === null)) {&amp;#10;        feedbackstr = &quot;!&quot;;&amp;#10;    } else {&amp;#10;        feedbackstr = &quot;X&quot;;&amp;#10;    }&amp;#10;}&amp;#10;bkTrialNum += 1;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if key_resp.keys == str(correct_answer_direction):&amp;#10;    feedbackstr = &quot;&quot;&amp;#10;    bkRT.append(key_resp.rt)&amp;#10;    bkCorrectNum += 1&amp;#10;elif key_resp.keys == None:&amp;#10;    feedbackstr = '!'&amp;#10;   &amp;#10;else:&amp;#10;    feedbackstr = 'X'&amp;#10;    &amp;#10;&amp;#10;&amp;#10;bkTrialNum+=1" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -1425,7 +1425,7 @@
     <Routine name="welcomescreen"/>
     <LoopInitiator loopType="TrialHandler" name="init_random_block">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'initial_random_seq_files': 'sequences/973689_initial_random.csv'}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'initial_random_seq_files': 'sequences/542234_initial_random.csv'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="sequences/init_random_sequence_file_list.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="False" valType="bool"/>
@@ -1455,12 +1455,12 @@
     <Routine name="pratice_instruction"/>
     <LoopInitiator loopType="TrialHandler" name="practice_blocks">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'practice_seq_files': 'sequences/817500_practice_sequence_00.csv'}, {'practice_seq_files': 'sequences/817500_practice_sequence_01.csv'}, {'practice_seq_files': 'sequences/817500_practice_sequence_02.csv'}, {'practice_seq_files': 'sequences/817500_practice_sequence_03.csv'}, {'practice_seq_files': 'sequences/817500_practice_sequence_04.csv'}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'practice_seq_files': 'sequences/542234_practice_sequence_00.csv'}, {'practice_seq_files': 'sequences/542234_practice_sequence_01.csv'}, {'practice_seq_files': 'sequences/542234_practice_sequence_02.csv'}, {'practice_seq_files': 'sequences/542234_practice_sequence_03.csv'}, {'practice_seq_files': 'sequences/542234_practice_sequence_04.csv'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="sequences/practice_sequence_file_list.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="0" valType="num"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
       <Param name="name" updates="None" val="practice_blocks" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -1485,7 +1485,7 @@
     <Routine name="learning_instruction"/>
     <LoopInitiator loopType="TrialHandler" name="learning_trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'learning_seq_files': 'sequences/973689_learning_sequence_00.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_01.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_02.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_03.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_04.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_05.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_06.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_07.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_08.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_09.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_10.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_11.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_12.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_13.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_14.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_15.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_16.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_17.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_18.csv'}, {'learning_seq_files': 'sequences/973689_learning_sequence_19.csv'}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'learning_seq_files': 'sequences/542234_learning_sequence_00.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_01.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_02.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_03.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_04.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_05.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_06.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_07.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_08.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_09.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_10.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_11.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_12.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_13.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_14.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_15.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_16.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_17.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_18.csv'}, {'learning_seq_files': 'sequences/542234_learning_sequence_19.csv'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="sequences/learning_sequence_file_list.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="False" valType="bool"/>
@@ -1530,7 +1530,7 @@
     <Routine name="motor_testing_instruction"/>
     <LoopInitiator loopType="TrialHandler" name="motor_testing_trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'motor_testing_seq_files': 'sequences/973689_motortesting_sequence_00.csv'}, {'motor_testing_seq_files': 'sequences/973689_motortesting_sequence_01.csv'}, {'motor_testing_seq_files': 'sequences/973689_motortesting_sequence_02.csv'}, {'motor_testing_seq_files': 'sequences/973689_motortesting_sequence_03.csv'}, {'motor_testing_seq_files': 'sequences/973689_motortesting_sequence_04.csv'}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'motor_testing_seq_files': 'sequences/542234_motortesting_sequence_00.csv'}, {'motor_testing_seq_files': 'sequences/542234_motortesting_sequence_01.csv'}, {'motor_testing_seq_files': 'sequences/542234_motortesting_sequence_02.csv'}, {'motor_testing_seq_files': 'sequences/542234_motortesting_sequence_03.csv'}, {'motor_testing_seq_files': 'sequences/542234_motortesting_sequence_04.csv'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="sequences/motor_testing_sequence_file_list.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>

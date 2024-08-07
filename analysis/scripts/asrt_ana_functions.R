@@ -308,7 +308,7 @@ asrt_plot2 <- function(unitx, tasktype, d_summary, finfo, sidstr) {
   
   fn <- match_prefix(sidstr,finfo$fns)
   
-  figpath <- paste0('figures/', str_replace(fn, '.csv', figpath_suffix))
+  figpath <- paste0('figures/', tasktype,'/', str_replace(fn, '.csv', figpath_suffix))
   print(fig)
   ggsave(figpath, width = ifelse(unitx== 'epoch', 20, 40), height = 15, units = "cm")
   

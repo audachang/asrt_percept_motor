@@ -18,37 +18,80 @@ ui <- fluidPage(
 
     ),
     mainPanel(
-      plotOutput("dataPlot")
+      plotOutput("rtPlot"),
+      plotOutput("reportPlot")
     )
   )
 )
 
 # Define server logic
 server <- function(input, output) {
-  d_summary <- reactive({
+  d <- reactive({
+    
     #req(input$fileInput)  # Require that a file is selected
     finfo <- list_file(input$tasktype)
     fpth <- select_file(input$sid, finfo)
-    print(fpth)
-    d_add_cond <- add_condition_cols(fpth, input$tasktype)
-    print(head(d_add_cond))
-    d_add_freq <- assign_freq(d_add_cond)
-    #print(head(d_add_freq))
+    import_d(fpth, input$tasktype)
+    
+    
+  })  
   
+  d_add_cond <- reactive({
+    add_condition_cols(d(), input$tasktype)
+  })
+  
+  
+  d_summary <- reactive({
+    #print(d_add_cond())
+    d_add_freq <- assign_freq(d_add_cond())
     create_summ4plot(d_add_freq, input$unitx)
   })
   
-  output$dataPlot <- renderPlot({
+  #seqreport <- extr_stiseq_respseq(d_add_cond())
+  #print(d_summary)
+  
+  seqreport <- reactive({
+    
+    report <- extr_stiseq_respseq(d(), d_add_cond()) #extract sti and response sequence
+    dfresp <- report$reportseq
+    stiseq <- report$stiseq
+    # Example usage with dfresp dataframe
+    dfresp %>%
+      group_by(blockID) %>%
+      summarise(
+        rotation_info = list(max_repeated_rotation_in_respseq(stiseq, seq_report_key.keys))
+      ) %>%
+      mutate(
+        max_match_count = map_int(rotation_info, "max_match_count"),
+        best_rotation = map(rotation_info, "best_rotation"),
+        element_match_count = map_int(rotation_info, "element_match_count")
+      ) %>%
+      select(-rotation_info)
+  })
+  
+  
+  
+  
+  
+  output$rtPlot <- renderPlot({
       d_summ <- d_summary()
-      #print(head(d_summary()))
       finfo <- list_file(input$tasktype)
-      
-      asrt_plot2(input$unitx, 
+      sidstr <- 
+      asrt_plot(input$unitx, 
                  input$tasktype, 
                  d_summ, 
                  finfo, 
                  input$sid)
     })
+  
+  output$reportPlot <- renderPlot({
+    
+    plot_element_match_count(seqreport())
+    
+    
+  })  
+  
+  
   
   output$dynamicUI <- renderUI({
     
@@ -60,7 +103,12 @@ server <- function(input, output) {
               choices = finfo$sids)
     )
     
-  })  
+  })
+  
+  
+  #output$
+  
+  
 }
 
 # Run the application 

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on August 07, 2024, at 18:02
+    on August 08, 2024, at 00:11
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -995,7 +995,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
-    init_random_block = data.TrialHandler(nReps=1.0, method='sequential', 
+    init_random_block = data.TrialHandler(nReps=0.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=data.importConditions('sequences/init_random_sequence_file_list.xlsx'),
         seed=None, name='init_random_block')
@@ -1711,7 +1711,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             routineTimer.reset()
         else:
             routineTimer.addTime(-4.000000)
-    # completed 1.0 repeats of 'init_random_block'
+    # completed 0.0 repeats of 'init_random_block'
     
     
     # --- Prepare to start Routine "pratice_instruction" ---
@@ -1855,7 +1855,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
-    practice_blocks = data.TrialHandler(nReps=1.0, method='sequential', 
+    practice_blocks = data.TrialHandler(nReps=0.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=data.importConditions('sequences/practice_sequence_file_list.xlsx'),
         seed=None, name='practice_blocks')
@@ -2576,7 +2576,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if thisSession is not None:
             # if running in a Session with a Liaison client, send data up to now
             thisSession.sendExperimentData()
-    # completed 1.0 repeats of 'practice_blocks'
+    # completed 0.0 repeats of 'practice_blocks'
     
     
     # --- Prepare to start Routine "learning_instruction" ---
@@ -2719,7 +2719,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
-    learning_trials = data.TrialHandler(nReps=1.0, method='sequential', 
+    learning_trials = data.TrialHandler(nReps=0.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=data.importConditions('sequences/learning_sequence_file_list.xlsx'),
         seed=None, name='learning_trials')
@@ -3790,7 +3790,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             routineTimer.reset()
         else:
             routineTimer.addTime(-4.000000)
-    # completed 1.0 repeats of 'learning_trials'
+    # completed 0.0 repeats of 'learning_trials'
     
     
     # --- Prepare to start Routine "percept_testing_instruction" ---
@@ -4065,7 +4065,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         # set up handler to look after randomisation of conditions etc
         percept_testing_loop = data.TrialHandler(nReps=1.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
-            trialList=data.importConditions(percept_testing_seq_files),
+            trialList=data.importConditions(percept_testing_seq_files, selection='0:8'),
             seed=None, name='percept_testing_loop')
         thisExp.addLoop(percept_testing_loop)  # add the loop to the experiment
         thisPercept_testing_loop = percept_testing_loop.trialList[0]  # so we can initialise stimuli with some values

@@ -47,12 +47,11 @@ for (tasktype in all_tasktypes){
         all_statistical_learning, learning_res$statistical_learning) 
   }
   
-  export(all_d_summary, file = '../proc_data/all_d_summary.csv')
-  export(all_reportseq, file = '../proc_data/all_reportseq.csv')
-  export(all_sequence_learning, file = '../proc_data/all_sequence_learning.csv')
-  export(all_statistical_learning, file = '../proc_data/all_statistical_learning.csv')
-  
-  
-  
-  
+
 }
+
+export(all_d_summary, file = '../proc_data/all_d_summary.csv')
+export(all_reportseq, file = '../proc_data/all_reportseq.csv')
+export(all_sequence_learning, file = '../proc_data/all_sequence_learning.csv')
+export(all_statistical_learning, file = '../proc_data/all_statistical_learning.csv')
+
